@@ -1,3 +1,6 @@
+2010-12-22 Graeme Gott <graeme@gottcode.org>
+	* Add rotating pieces with any mouse button.
+
 2009-12-30 Graeme Gott <graeme@gottcode.org>
 	* Remove unnecessary QtSvg dependency.
 

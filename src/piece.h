@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2010 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -58,7 +58,6 @@ public:
 	}
 
 protected:
-	virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event);
 	virtual void mouseMoveEvent(QGraphicsSceneMouseEvent* event);
 	virtual void mousePressEvent(QGraphicsSceneMouseEvent* event);
 	virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent* event);
@@ -79,6 +78,8 @@ private:
 	int m_rotations;
 	QPointF m_position;
 	Piece* m_swap_piece;
+	QPoint m_start_position;
+	bool m_clicked;
 };
 
 #endif

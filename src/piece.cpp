@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2010 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,6 +21,7 @@
 
 #include "puzzle.h"
 
+#include <QApplication>
 #include <QGraphicsItemAnimation>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
@@ -38,7 +39,8 @@ Piece::Piece(Puzzle* puzzle)
   m_puzzle(puzzle),
   m_gradient(50, 50, 90),
   m_rotations(0),
-  m_swap_piece(0) {
+  m_swap_piece(0),
+  m_clicked(false) {
 	for (int i = 0; i < 6; ++i) {
 		m_colors.append(i);
 		m_connectors.append(-1);
@@ -153,14 +155,12 @@ QString Piece::toString() const {
 
 /*****************************************************************************/
 
-void Piece::mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) {
-	rotate();
-	QGraphicsEllipseItem::mouseDoubleClickEvent(event);
-}
-
-/*****************************************************************************/
-
 void Piece::mouseMoveEvent(QGraphicsSceneMouseEvent* event) {
+	// Do not rotate because piece was dragged
+	if ((m_start_position - event->screenPos()).manhattanLength() >= QApplication::startDragDistance()) {
+		m_clicked = false;
+	}
+
 	// Find piece containing center
 	Piece* swap_piece = 0;
 	QList<QGraphicsItem*> items = scene()->items(sceneBoundingRect().center());
@@ -197,9 +197,9 @@ void Piece::mousePressEvent(QGraphicsSceneMouseEvent* event) {
 	if (event->button() == Qt::LeftButton) {
 		setZValue(3);
 		m_swap_piece = 0;
-	} else if (event->button() == Qt::RightButton) {
-		rotate();
 	}
+	m_start_position = event->screenPos();
+	m_clicked = true;
 	QGraphicsEllipseItem::mousePressEvent(event);
 }
 
@@ -213,6 +213,9 @@ void Piece::mouseReleaseEvent(QGraphicsSceneMouseEvent* event) {
 		m_swap_piece->setZValue(2);
 		m_swap_piece->moveTo(m_swap_piece->m_position);
 		m_swap_piece = 0;
+	} else if (m_clicked) {
+		rotate();
+		m_clicked = false;
 	}
 	moveTo(m_position);
 	QGraphicsEllipseItem::mouseReleaseEvent(event);
