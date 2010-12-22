@@ -1,5 +1,4 @@
 TEMPLATE = app
-VERSION = 1.0.1
 CONFIG += warn_on release
 macx {
 	# Uncomment the following line to compile on PowerPC Macs
@@ -28,6 +27,8 @@ SOURCES = src/board.cpp \
 	src/puzzle.cpp \
 	src/window.cpp
 
+TRANSLATIONS = translations/en_US.ts
+
 RESOURCES = icons/icon.qrc
 macx {
 	ICON = icons/hexalate.icns
@@ -39,14 +40,20 @@ unix: !macx {
 	isEmpty(PREFIX) {
 		PREFIX = /usr/local
 	}
+	isEmpty(BINDIR) {
+		BINDIR = bin
+	}
 
-	target.path = $$PREFIX/bin/
+	target.path = $$PREFIX/$$BINDIR/
 
-	icon.path = $$PREFIX/share/icons/hicolor/48x48/apps
+	icon.path = $$PREFIX/share/icons/hicolor/48x48/apps/
 	icon.files = icons/hexalate.png
 
 	desktop.path = $$PREFIX/share/applications/
 	desktop.files = icons/hexalate.desktop
 
-	INSTALLS += target icon desktop
+	qm.path = $$PREFIX/share/hexalate/translations/
+	qm.files = translations/*.qm
+
+	INSTALLS += target icon desktop qm
 }
