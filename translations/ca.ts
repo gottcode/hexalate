@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="en_US" sourcelanguage="en">
+<TS version="2.0" language="ca" sourcelanguage="en">
 <context>
     <name>Board</name>
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Pregunta</translation>
     </message>
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Abort current game?</source>
-        <translation type="unfinished"></translation>
+        <translation>Abortar aquesta partida?</translation>
     </message>
 </context>
 <context>
@@ -24,27 +24,27 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>Català</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="54"/>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>Alemany</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="55"/>
         <source>American English</source>
-        <translation type="unfinished"></translation>
+        <translation>Anglès americà</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="56"/>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>Espanyol</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="57"/>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation>Francès</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="152"/>
@@ -62,17 +62,17 @@
     <message>
         <location filename="../src/puzzle.cpp" line="162"/>
         <source>Success</source>
-        <translation type="unfinished"></translation>
+        <translation>Èxit</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Sorry</source>
-        <translation type="unfinished"></translation>
+        <translation>Ho sento</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Unable to load previous game. Starting a new game.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut carregar la darrera partida. Començant una partida nova.</translation>
     </message>
 </context>
 <context>
@@ -80,32 +80,32 @@
     <message>
         <location filename="../src/window.cpp" line="34"/>
         <source>Hexalate</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="41"/>
         <source>&amp;Game</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Joc</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="42"/>
         <source>&amp;New</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nou</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="42"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="44"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Surt</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="44"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="46"/>
@@ -120,32 +120,32 @@
     <message>
         <location filename="../src/window.cpp" line="49"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ajuda</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="50"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sobre l&apos;applicació</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="51"/>
         <source>About &amp;Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Sobre &amp;Qt</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="74"/>
         <source>About Hexalate</source>
-        <translation type="unfinished"></translation>
+        <translation>Sobre Hexalate</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="76"/>
         <source>A color matching game</source>
-        <translation type="unfinished"></translation>
+        <translation>Un joc de combinació de colors</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="77"/>
         <source>Copyright &amp;copy; 2009-2010 Graeme Gott</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>

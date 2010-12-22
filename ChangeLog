@@ -1,5 +1,9 @@
 2010-12-22 Graeme Gott <graeme@gottcode.org>
+	* Add changing the program language.
 	* Add rotating pieces with any mouse button.
+
+2010-09-24 Adrián Cereto Massagué <ssorgatem@gmail.com>
+	* Add translations.
 
 2009-12-30 Graeme Gott <graeme@gottcode.org>
 	* Remove unnecessary QtSvg dependency.

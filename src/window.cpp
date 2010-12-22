@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2010 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,6 +20,7 @@
 #include "window.h"
 
 #include "board.h"
+#include "locale_dialog.h"
 
 #include <QApplication>
 #include <QMenuBar>
@@ -42,6 +43,9 @@ Window::Window() {
 	menu->addSeparator();
 	menu->addAction(tr("&Quit"), qApp, SLOT(quit()), tr("Ctrl+Q"));
 
+	menu = menuBar()->addMenu(tr("&Settings"));
+	menu->addAction(tr("Application &Language..."), this, SLOT(setLocale()));
+
 	menu = menuBar()->addMenu(tr("&Help"));
 	menu->addAction(tr("&About"), this, SLOT(about()));
 	menu->addAction(tr("About &Qt"), qApp, SLOT(aboutQt()));
@@ -59,8 +63,18 @@ void Window::closeEvent(QCloseEvent* event) {
 
 /*****************************************************************************/
 
+void Window::setLocale() {
+	LocaleDialog dialog(this);
+	dialog.exec();
+}
+
+/*****************************************************************************/
+
 void Window::about() {
-	QMessageBox::about(this, tr("About Hexalate"), tr("<center><big><b>Hexalate %1</b></big><br/>A color matching game<br/><small>Copyright &copy; 2009 Graeme Gott</small></center>").arg(qApp->applicationVersion()));
+	QMessageBox::about(this, tr("About Hexalate"), QString("<center><big><b>Hexalate %1</b></big><br/>%2<br/><small>%3</small></center>")
+		.arg(qApp->applicationVersion())
+		.arg(tr("A color matching game"))
+		.arg(tr("Copyright &copy; 2009-2010 Graeme Gott")));
 }
 
 /*****************************************************************************/

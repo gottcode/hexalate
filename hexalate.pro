@@ -17,17 +17,23 @@ unix: !macx {
 }
 
 HEADERS = src/board.h \
+	src/locale_dialog.h \
 	src/piece.h \
 	src/puzzle.h \
 	src/window.h
 
 SOURCES = src/board.cpp \
+	src/locale_dialog.cpp \
 	src/main.cpp \
 	src/piece.cpp \
 	src/puzzle.cpp \
 	src/window.cpp
 
-TRANSLATIONS = translations/en_US.ts
+TRANSLATIONS = translations/ca.ts \
+	translations/de.ts \
+	translations/en_US.ts \
+	translations/es.ts \
+	translations/fr.ts
 
 RESOURCES = icons/icon.qrc
 macx {

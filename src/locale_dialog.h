@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2010 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2010 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,23 +17,32 @@
  *
  ***********************************************************************/
 
-#include "window.h"
+#ifndef LOCALE_DIALOG_H
+#define LOCALE_DIALOG_H
 
-#include "locale_dialog.h"
+#include <QDialog>
+class QComboBox;
 
-#include <QApplication>
+class LocaleDialog : public QDialog
+{
+	Q_OBJECT
 
-int main(int argc, char** argv) {
-	QApplication app(argc, argv);
-	app.setApplicationName("Hexalate");
-	app.setApplicationVersion("1.0.1");
-	app.setOrganizationDomain("gottcode.org");
-	app.setOrganizationName("GottCode");
+public:
+	LocaleDialog(QWidget* parent = 0);
 
-	LocaleDialog::loadTranslator();
+	static void loadTranslator();
 
-	Window window;
-	window.show();
+public slots:
+	virtual void accept();
 
-	return app.exec();
-}
+private:
+	static QStringList findTranslations();
+
+private:
+	QComboBox* m_translations;
+
+	static QString m_current;
+	static QString m_path;
+};
+
+#endif
