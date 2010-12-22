@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Hexalate
+Exec=hexalate
+Icon=hexalate
+Terminal=false
+Type=Application
+Categories=Qt;Game;

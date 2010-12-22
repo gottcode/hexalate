@@ -1,0 +1,26 @@
+2009-12-30 Graeme Gott <graeme@gottcode.org>
+	* Remove unnecessary QtSvg dependency.
+
+2009-04-06 Graeme Gott <graeme@gottcode.org>
+	* Add program icon.
+
+2009-04-05 Graeme Gott <graeme@gottcode.org>
+	* Add program name.
+	* Add window class.
+	* Remember current game across runs.
+	* Detect when a game has finished.
+
+2009-04-04 Graeme Gott <graeme@gottcode.org>
+	* Animate piece movement.
+
+2009-04-03 Graeme Gott <graeme@gottcode.org>
+	* Enable moving pieces.
+	* Add board class.
+	* Animate piece rotation.
+
+2009-04-02 Graeme Gott <graeme@gottcode.org>
+	* Add piece graphics.
+
+2009-03-21 Graeme Gott <graeme@gottcode.org>
+	* Add puzzle class.
+	* Add piece class.
