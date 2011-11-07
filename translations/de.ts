@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Abort current game?</source>
-        <translation>Abbruch aktuelles Spiel?</translation>
+        <translation>Gegenwärtiges Spiel abbrechen?</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="48"/>
         <source>Select application language:</source>
-        <translation type="unfinished"></translation>
+        <translation>Anwendungssprache auswählen:</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="53"/>
@@ -49,12 +49,12 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="152"/>
         <source>Note</source>
-        <translation type="unfinished"></translation>
+        <translation>Hinweis</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="152"/>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte starten Sie diese Anwendung neu um den Wechsel der Sprache auszuführen.</translation>
     </message>
 </context>
 <context>
@@ -62,17 +62,17 @@
     <message>
         <location filename="../src/puzzle.cpp" line="162"/>
         <source>Success</source>
-        <translation>Erfolgreich</translation>
+        <translation>Richtig gelöst</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Sorry</source>
-        <translation></translation>
+        <translation>Sorry</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Unable to load previous game. Starting a new game.</source>
-        <translation>Kann nicht geladen letzten Spiel. Ein neues Spiel starten.</translation>
+        <translation>Letztes Spiel konnte nicht geladen werden. Ein neues Spiel wird gestartet.</translation>
     </message>
 </context>
 <context>
@@ -80,7 +80,7 @@
     <message>
         <location filename="../src/window.cpp" line="34"/>
         <source>Hexalate</source>
-        <translation></translation>
+        <translation>Hexalate</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="41"/>
@@ -115,7 +115,7 @@
     <message>
         <location filename="../src/window.cpp" line="47"/>
         <source>Application &amp;Language...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Anwendungssprache...</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="49"/>
@@ -125,17 +125,17 @@
     <message>
         <location filename="../src/window.cpp" line="50"/>
         <source>&amp;About</source>
-        <translation>&amp;Über das Spiel</translation>
+        <translation>&amp;Info</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="51"/>
         <source>About &amp;Qt</source>
-        <translation>Über &amp;Qt</translation>
+        <translation>Info über &amp;Qt</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="74"/>
         <source>About Hexalate</source>
-        <translation>Über Hexalate</translation>
+        <translation>Info über Hexalate</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="76"/>
@@ -145,7 +145,7 @@
     <message>
         <location filename="../src/window.cpp" line="77"/>
         <source>Copyright &amp;copy; 2009-2010 Graeme Gott</source>
-        <translation></translation>
+        <translation>Copyright &amp;copy; 2009-2010 Graeme Gott</translation>
     </message>
 </context>
 </TS>
