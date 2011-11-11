@@ -30,6 +30,7 @@ SOURCES = src/board.cpp \
 	src/window.cpp
 
 TRANSLATIONS = translations/ca.ts \
+	translations/cs.ts \
 	translations/de.ts \
 	translations/en_US.ts \
 	translations/es.ts \
