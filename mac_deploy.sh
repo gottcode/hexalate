@@ -2,7 +2,7 @@
 
 APP='Hexalate'
 BUNDLE="$APP.app"
-VERSION='1.0.1'
+VERSION=$(git rev-parse --short HEAD)
 
 # Create disk folder
 echo -n 'Copying application bundle... '
