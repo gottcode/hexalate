@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2010 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2010, 2011, 2012 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -37,6 +37,7 @@
 
 QString LocaleDialog::m_current;
 QString LocaleDialog::m_path;
+QString LocaleDialog::m_appname;
 
 //-----------------------------------------------------------------------------
 
@@ -48,27 +49,16 @@ LocaleDialog::LocaleDialog(QWidget* parent)
 	QLabel* text = new QLabel(tr("Select application language:"), this);
 
 	m_translations = new QComboBox(this);
+	m_translations->addItem(tr("<System Language>"));
+	QString translation;
 	QStringList translations = findTranslations();
-	QHash<QString, QString> display_texts;
-	display_texts.insert("ca", tr("Catalan"));
-	display_texts.insert("de", tr("German"));
-	display_texts.insert("en_US", tr("American English"));
-	display_texts.insert("es", tr("Spanish"));
-	display_texts.insert("fr", tr("French"));
-	foreach (const QString& translation, translations) {
+	foreach (translation, translations) {
 		if (translation.startsWith("qt")) {
 			continue;
 		}
-		QString display = display_texts.value(translation);
-		if (display.isEmpty()) {
-			QLocale locale(translation);
-			QString country = QLocale::countryToString(locale.country());
-			QString language = QLocale::languageToString(locale.language());
-			display = (translation.length() == 2) ? language : QString("%1 (%2)").arg(language, country);
-		}
-		m_translations->addItem(display, translation);
+		translation.remove(m_appname);
+		m_translations->addItem(languageName(translation), translation);
 	}
-	m_translations->model()->sort(0);
 	int index = qMax(0, m_translations->findData(m_current));
 	m_translations->setCurrentIndex(index);
 
@@ -85,9 +75,10 @@ LocaleDialog::LocaleDialog(QWidget* parent)
 
 //-----------------------------------------------------------------------------
 
-void LocaleDialog::loadTranslator()
+void LocaleDialog::loadTranslator(const QString& name)
 {
 	QString appdir = QCoreApplication::applicationDirPath();
+	m_appname = name;
 
 	// Find translator path
 	QStringList paths;
@@ -102,30 +93,64 @@ void LocaleDialog::loadTranslator()
 	}
 
 	// Find current locale
-	m_current = QSettings().value("Locale/Language", QLocale::system().name()).toString();
+	m_current = QSettings().value("Locale/Language").toString();
+	QString current = !m_current.isEmpty() ? m_current : QLocale::system().name();
 	QStringList translations = findTranslations();
-	if (!translations.contains(m_current)) {
-		m_current = m_current.left(2);
-		if (!translations.contains(m_current)) {
-			m_current = "en_US";
+	if (!translations.contains(m_appname + current)) {
+		current = current.left(2);
+		if (!translations.contains(m_appname + current)) {
+			current.clear();
 		}
 	}
-	QLocale::setDefault(m_current);
-
-	// Load translators
-	if (translations.contains("qt_" + m_current) || translations.contains("qt_" + m_current.left(2))) {
-		static QTranslator local_qt_translator;
-		local_qt_translator.load("qt_" + m_current, m_path);
-		QCoreApplication::installTranslator(&local_qt_translator);
+	if (!current.isEmpty()) {
+		QLocale::setDefault(current);
+	} else {
+		current = "en";
 	}
 
+	// Load translators
 	static QTranslator qt_translator;
-	qt_translator.load("qt_" + m_current, QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+	if (translations.contains("qt_" + current) || translations.contains("qt_" + current.left(2))) {
+		qt_translator.load("qt_" + current, m_path);
+	} else {
+		qt_translator.load("qt_" + current, QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+	}
 	QCoreApplication::installTranslator(&qt_translator);
 
 	static QTranslator translator;
-	translator.load(m_current, m_path);
+	translator.load(m_appname + current, m_path);
 	QCoreApplication::installTranslator(&translator);
+}
+
+//-----------------------------------------------------------------------------
+
+QString LocaleDialog::languageName(const QString& language)
+{
+	QString lang_code = language.left(5);
+	QLocale locale(lang_code);
+	QString name;
+#if QT_VERSION >= 0x040800
+	if (lang_code.length() > 2) {
+		if (locale.name() == lang_code) {
+			name = locale.nativeLanguageName() + " (" + locale.nativeCountryName() + ")";
+		} else {
+			name = locale.nativeLanguageName() + " (" + language + ")";
+		}
+	} else {
+		name = locale.nativeLanguageName();
+	}
+#else
+	if (lang_code.length() > 2) {
+		if (locale.name() == lang_code) {
+			name = QLocale::languageToString(locale.language()) + " (" + QLocale::countryToString(locale.country()) + ")";
+		} else {
+			name = QLocale::languageToString(locale.language()) + " (" + language + ")";
+		}
+	} else {
+		name = QLocale::languageToString(locale.language());
+	}
+#endif
+	return name;
 }
 
 //-----------------------------------------------------------------------------

@@ -35,12 +35,13 @@ SOURCES = src/board.cpp \
 	src/puzzle.cpp \
 	src/window.cpp
 
-TRANSLATIONS = translations/ca.ts \
-	translations/cs.ts \
-	translations/de.ts \
-	translations/en_US.ts \
-	translations/es.ts \
-	translations/fr.ts
+TRANSLATIONS = translations/hexalate_ca.ts \
+	translations/hexalate_cs.ts \
+	translations/hexalate_de.ts \
+	translations/hexalate_en.ts \
+	translations/hexalate_es.ts \
+	translations/hexalate_et.ts \
+	translations/hexalate_fr.ts
 
 RESOURCES = icons/icon.qrc
 macx {

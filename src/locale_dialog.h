@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2010 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2010, 2011, 2012 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,10 +30,11 @@ class LocaleDialog : public QDialog
 public:
 	LocaleDialog(QWidget* parent = 0);
 
-	static void loadTranslator();
+	static void loadTranslator(const QString& appname);
+	static QString languageName(const QString& language);
 
 public slots:
-	virtual void accept();
+	void accept();
 
 private:
 	static QStringList findTranslations();
@@ -43,6 +44,7 @@ private:
 
 	static QString m_current;
 	static QString m_path;
+	static QString m_appname;
 };
 
 #endif

@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
 	app.setOrganizationDomain("gottcode.org");
 	app.setOrganizationName("GottCode");
 
-	LocaleDialog::loadTranslator();
+	LocaleDialog::loadTranslator("hexalate_");
 
 	Window window;
 	window.show();
