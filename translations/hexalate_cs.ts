@@ -59,6 +59,7 @@
     <name>Window</name>
     <message>
         <location filename="../src/window.cpp" line="34"/>
+        <location filename="../src/window.cpp" line="75"/>
         <source>Hexalate</source>
         <translation>Hexalate</translation>
     </message>
@@ -124,8 +125,17 @@
     </message>
     <message>
         <location filename="../src/window.cpp" line="77"/>
+        <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
+        <translation type="unfinished">Autorské právo &amp;copy; 2009-2010 Graeme Gott {2009-%1 ?}</translation>
+    </message>
+    <message>
+        <location filename="../src/window.cpp" line="78"/>
+        <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Copyright &amp;copy; 2009-2010 Graeme Gott</source>
-        <translation>Autorské právo &amp;copy; 2009-2010 Graeme Gott</translation>
+        <translation type="obsolete">Autorské právo &amp;copy; 2009-2010 Graeme Gott</translation>
     </message>
 </context>
 </TS>
