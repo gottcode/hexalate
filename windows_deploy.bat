@@ -6,6 +6,7 @@ FOR /f %%i IN ('git rev-parse --short HEAD') DO SET VERSION=%%i
 ECHO Copying executable
 MKDIR %APP%
 TYPE COPYING | FIND "" /V > %APP%\COPYING.txt
+TYPE CREDITS | FIND "" /V > %APP%\CREDITS.txt
 COPY release\%APP%.exe %APP% >nul
 strip %APP%\%APP%.exe
 
