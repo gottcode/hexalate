@@ -17,22 +17,22 @@
 <context>
     <name>LocaleDialog</name>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="49"/>
+        <location filename="../src/locale_dialog.cpp" line="50"/>
         <source>Select application language:</source>
         <translation>Vybrat jazyk programu:</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="52"/>
+        <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Jazyk systému&gt;</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="177"/>
+        <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Note</source>
         <translation>Poznámka</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="177"/>
+        <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Please restart this application for the change in language to take effect.</source>
         <translation>Spusťte, prosím, tento program znovu, aby se změna jazyka projevila..</translation>
     </message>
@@ -126,16 +126,12 @@
     <message>
         <location filename="../src/window.cpp" line="77"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation type="unfinished">Autorské právo &amp;copy; 2009-2010 Graeme Gott {2009-%1 ?}</translation>
+        <translation>Autorské právo &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="78"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Copyright &amp;copy; 2009-2010 Graeme Gott</source>
-        <translation type="obsolete">Autorské právo &amp;copy; 2009-2010 Graeme Gott</translation>
+        <translation>Vydáno pod licencí &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
 </context>
 </TS>

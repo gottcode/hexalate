@@ -6,35 +6,35 @@
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Question</translation>
     </message>
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Abort current game?</source>
-        <translation>Abandonner le jeu?</translation>
+        <translation>Abandonner le jeu ?</translation>
     </message>
 </context>
 <context>
     <name>LocaleDialog</name>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="49"/>
+        <location filename="../src/locale_dialog.cpp" line="50"/>
         <source>Select application language:</source>
-        <translation>Choisissez la langue du programme :</translation>
+        <translation>Sélectionner la langue de l&apos;application :</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="52"/>
+        <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Langue du système&gt;</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="177"/>
+        <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Note</source>
-        <translation>Note</translation>
+        <translation>Remarque</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="177"/>
+        <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>Veuillez redémarrer le programme pour que le changement de langue prenne effet.</translation>
+        <translation>Veuillez relancer l&apos;application pour que la modification prenne effet. </translation>
     </message>
 </context>
 <context>
@@ -42,17 +42,17 @@
     <message>
         <location filename="../src/puzzle.cpp" line="162"/>
         <source>Success</source>
-        <translation>Réussi</translation>
+        <translation>Succès</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Sorry</source>
-        <translation>Je suis désolé</translation>
+        <translation>Désolé</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Unable to load previous game. Starting a new game.</source>
-        <translation>Impossible de charger le dernier jeu. Démarrage d&apos;une nouvelle.</translation>
+        <translation>Impossible de charger le dernier jeu. Démarrage d&apos;une nouvelle partie.</translation>
     </message>
 </context>
 <context>
@@ -61,7 +61,7 @@
         <location filename="../src/window.cpp" line="34"/>
         <location filename="../src/window.cpp" line="75"/>
         <source>Hexalate</source>
-        <translation type="unfinished"></translation>
+        <translation>Hexalate</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="41"/>
@@ -71,12 +71,12 @@
     <message>
         <location filename="../src/window.cpp" line="42"/>
         <source>&amp;New</source>
-        <translation>&amp;Neu</translation>
+        <translation>&amp;Nouveau</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="42"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="44"/>
@@ -86,17 +86,17 @@
     <message>
         <location filename="../src/window.cpp" line="44"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="46"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Configuration</translation>
+        <translation>&amp;Paramètres</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="47"/>
         <source>Application &amp;Language...</source>
-        <translation>&amp;Langue de l&apos;application...</translation>
+        <translation>&amp;Langue de l&apos;application…</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="49"/>
@@ -106,7 +106,7 @@
     <message>
         <location filename="../src/window.cpp" line="50"/>
         <source>&amp;About</source>
-        <translation>&amp;À propos de</translation>
+        <translation>À &amp;propos de…</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="51"/>
@@ -126,12 +126,12 @@
     <message>
         <location filename="../src/window.cpp" line="77"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="78"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation type="unfinished"></translation>
+        <translation>Distribué sous licence GNU &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
 </context>
 </TS>

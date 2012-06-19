@@ -17,22 +17,22 @@
 <context>
     <name>LocaleDialog</name>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="49"/>
+        <location filename="../src/locale_dialog.cpp" line="50"/>
         <source>Select application language:</source>
         <translation>Anwendungssprache auswählen:</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="52"/>
+        <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Systemeinstellung&gt;</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="177"/>
+        <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Note</source>
         <translation>Hinweis</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="177"/>
+        <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Please restart this application for the change in language to take effect.</source>
         <translation>Bitte starten Sie diese Anwendung neu um den Wechsel der Sprache auszuführen.</translation>
     </message>
@@ -126,16 +126,12 @@
     <message>
         <location filename="../src/window.cpp" line="77"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation type="unfinished">Copyright &amp;copy; 2009-2010 Graeme Gott {2009-%1 ?}</translation>
+        <translation>Copyright &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="78"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Copyright &amp;copy; 2009-2010 Graeme Gott</source>
-        <translation type="obsolete">Copyright &amp;copy; 2009-2010 Graeme Gott</translation>
+        <translation>Veröffentlicht unter der &lt;a href=%1&gt;GPL-3&lt;/a&gt;-Lizenz</translation>
     </message>
 </context>
 </TS>
