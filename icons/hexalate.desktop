@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=Hexalate
+GenericName=Color Matching Game
 Exec=hexalate
 Icon=hexalate
 Terminal=false
 Type=Application
-Categories=Qt;Game;
+Categories=Qt;Game;LogicGame;
