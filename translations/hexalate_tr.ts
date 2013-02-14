@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="et" sourcelanguage="en">
+<TS version="2.0" language="tr" sourcelanguage="en">
 <context>
     <name>Board</name>
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Question</source>
-        <translation>Küsimus</translation>
+        <translation>Yeni Oyun</translation>
     </message>
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Abort current game?</source>
-        <translation>Katkestada praegune mäng?</translation>
+        <translation>Başlamak istediğinize emin misiniz?</translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="50"/>
         <source>Select application language:</source>
-        <translation>Vali rakenduse keel:</translation>
+        <translation>Uygulama dilini seçiniz</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation>&lt;Süsteemi keel&gt;</translation>
+        <translation>&lt;Sistem Dili&gt;</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Note</source>
-        <translation>Märkus</translation>
+        <translation>Not</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>Keele muudatuse mõjumiseks taaskäivita palun see programm.</translation>
+        <translation>Lütfen değişikliklerin uygulanması için uygulamayı yeniden başlatın.</translation>
     </message>
 </context>
 <context>
@@ -42,17 +42,17 @@
     <message>
         <location filename="../src/puzzle.cpp" line="162"/>
         <source>Success</source>
-        <translation>Korras</translation>
+        <translation>Başarılı</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Sorry</source>
-        <translation>Vabandust</translation>
+        <translation>Üzgünüm</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Unable to load previous game. Starting a new game.</source>
-        <translation>Eelmise mängu laadimine ebaõnnestus. Uue mängu alustamine.</translation>
+        <translation>Önceki oyunu yükleme başarısız. Yeni oyun başlatılıyor.</translation>
     </message>
 </context>
 <context>
@@ -66,12 +66,12 @@
     <message>
         <location filename="../src/window.cpp" line="41"/>
         <source>&amp;Game</source>
-        <translation>Mäng</translation>
+        <translation>&amp;Oyun</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="42"/>
         <source>&amp;New</source>
-        <translation>Uus</translation>
+        <translation>&amp;Yeni</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="42"/>
@@ -81,7 +81,7 @@
     <message>
         <location filename="../src/window.cpp" line="44"/>
         <source>&amp;Quit</source>
-        <translation>Lõpeta</translation>
+        <translation>&amp;Çıkış</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="44"/>
@@ -91,47 +91,47 @@
     <message>
         <location filename="../src/window.cpp" line="46"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Seaded</translation>
+        <translation>&amp;Ayarlar</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="47"/>
         <source>Application &amp;Language...</source>
-        <translation>Rakendus ja keel...</translation>
+        <translation>uygulama &amp;Dil...</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="49"/>
         <source>&amp;Help</source>
-        <translation>Abiinfo</translation>
+        <translation>&amp;Yardım</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="50"/>
         <source>&amp;About</source>
-        <translation>Rakendusest</translation>
+        <translation>&amp;Hakkında</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="51"/>
         <source>About &amp;Qt</source>
-        <translation>&amp;Qt info</translation>
+        <translation>&amp;Qt Hakkında</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="74"/>
         <source>About Hexalate</source>
-        <translation>Hexalate info</translation>
+        <translation>Hexalate Hakkında</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="76"/>
         <source>A color matching game</source>
-        <translation>Värvide sobitamise mäng</translation>
+        <translation>Renk eşleştirme oyunu</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="77"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation>Autoriõigused &amp;copy; 2009-%1 Graeme Gott</translation>
+        <translation>Copyright &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="78"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation>Antud välja &lt;a href=%1&gt;GPL 3&lt;/a&gt; litsentsi alusel</translation>
+        <translation>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</translation>
     </message>
 </context>
 </TS>

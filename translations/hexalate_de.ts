@@ -27,12 +27,12 @@
         <translation>&lt;Systemeinstellung&gt;</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="181"/>
+        <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Note</source>
         <translation>Hinweis</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="181"/>
+        <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Please restart this application for the change in language to take effect.</source>
         <translation>Bitte starten Sie diese Anwendung neu um den Wechsel der Sprache auszuführen.</translation>
     </message>
