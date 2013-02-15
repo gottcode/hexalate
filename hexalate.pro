@@ -64,14 +64,17 @@ unix: !macx {
 
 	target.path = $$PREFIX/$$BINDIR/
 
-	icon.path = $$PREFIX/share/icons/hicolor/48x48/apps/
-	icon.files = icons/hexalate.png
+	icon.files = icons/hicolor/*
+	icon.path = $$PREFIX/share/icons/hicolor
 
-	desktop.path = $$PREFIX/share/applications/
+	pixmap.files = icons/hexalate.xpm
+	pixmap.path = $$PREFIX/share/pixmaps
+
 	desktop.files = icons/hexalate.desktop
+	desktop.path = $$PREFIX/share/applications
 
-	qm.path = $$PREFIX/share/hexalate/translations/
 	qm.files = translations/*.qm
+	qm.path = $$PREFIX/share/hexalate/translations
 
-	INSTALLS += target icon desktop qm
+	INSTALLS += target icon pixmap desktop qm
 }

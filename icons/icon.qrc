@@ -1,5 +1,12 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
-	<file>hexalate.png</file>
+	<file>hicolor/256x256/apps/hexalate.png</file>
+	<file>hicolor/128x128/apps/hexalate.png</file>
+	<file>hicolor/64x64/apps/hexalate.png</file>
+	<file>hicolor/48x48/apps/hexalate.png</file>
+	<file>hicolor/32x32/apps/hexalate.png</file>
+	<file>hicolor/24x24/apps/hexalate.png</file>
+	<file>hicolor/22x22/apps/hexalate.png</file>
+	<file>hicolor/16x16/apps/hexalate.png</file>
 </qresource>
 </RCC>
