@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ro" sourcelanguage="en">
+<TS version="2.0" language="nl" sourcelanguage="en">
 <context>
     <name>Board</name>
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Question</source>
-        <translation>Întrebare</translation>
+        <translation>Vraag</translation>
     </message>
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Abort current game?</source>
-        <translation>Abandonaţi jocul curent?</translation>
+        <translation>Huidig spel afbreken?</translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="50"/>
         <source>Select application language:</source>
-        <translation>Selectaţi limba aplicaţiei:</translation>
+        <translation>Selekteer Taal:</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation>&lt;Limbaj Sistem&gt;</translation>
+        <translation>&lt;Systeem Taal&gt;</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Note</source>
-        <translation>Notă</translation>
+        <translation>Aantekening</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>Vă rugăm reporniţi această aplicaţie pentru ca schimbarea limbii să aibă efect.</translation>
+        <translation>Herstart AUB dit programma om de verandering van de taal door te voeren.</translation>
     </message>
 </context>
 <context>
@@ -47,12 +47,12 @@
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Sorry</source>
-        <translation>Scuze</translation>
+        <translation>Sorry</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Unable to load previous game. Starting a new game.</source>
-        <translation>Nu s-a putut încărca jocul precedent. Pornire joc nou.</translation>
+        <translation>Kan huidige spel onmogelijk laden. Begin een nieuw spel.</translation>
     </message>
 </context>
 <context>
@@ -66,12 +66,12 @@
     <message>
         <location filename="../src/window.cpp" line="40"/>
         <source>&amp;Game</source>
-        <translation>&amp;Joc</translation>
+        <translation>&amp;Spel</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="41"/>
         <source>&amp;New</source>
-        <translation>&amp;Nou</translation>
+        <translation>&amp;Nieuw</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="41"/>
@@ -81,57 +81,57 @@
     <message>
         <location filename="../src/window.cpp" line="43"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Ieşire</translation>
+        <translation>&amp;Einde</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="43"/>
         <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
+        <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="45"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Setări</translation>
+        <translation>&amp;Instellingen</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="46"/>
         <source>Application &amp;Language...</source>
-        <translation>&amp;Limbă aplicaţie...</translation>
+        <translation>Programma &amp;Taal...</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="48"/>
         <source>&amp;Help</source>
-        <translation>&amp;Ajutor</translation>
+        <translation>&amp;Help</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="49"/>
         <source>&amp;About</source>
-        <translation>&amp;Despre</translation>
+        <translation>&amp;Over</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="50"/>
         <source>About &amp;Qt</source>
-        <translation>Despre &amp;Qt</translation>
+        <translation>Over &amp;Qt</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="73"/>
         <source>About Hexalate</source>
-        <translation>Despre Hexalate</translation>
+        <translation>Over Hexalate</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="75"/>
         <source>A color matching game</source>
-        <translation>Un joc de potrivire a culorilor</translation>
+        <translation>Een kleuren combinatiespel</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="76"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation>Toate drepturile rezervate &amp;copy; 2009-%1 Graeme Gott</translation>
+        <translation>Auteursrecht &amp;copie; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="77"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation>Lansat sub licenţă &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
+        <translation>Uitgebracht omder de &lt;a href=%1&gt;GPL 3&lt;/a&gt; licensie</translation>
     </message>
 </context>
 </TS>

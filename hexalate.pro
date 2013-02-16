@@ -43,6 +43,7 @@ TRANSLATIONS = translations/hexalate_ca.ts \
 	translations/hexalate_es.ts \
 	translations/hexalate_et.ts \
 	translations/hexalate_fr.ts \
+	translations/hexalate_nl.ts \
 	translations/hexalate_ro.ts \
 	translations/hexalate_ru.ts \
 	translations/hexalate_tr.ts
