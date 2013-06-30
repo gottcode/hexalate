@@ -36,17 +36,7 @@ SOURCES = src/board.cpp \
 	src/puzzle.cpp \
 	src/window.cpp
 
-TRANSLATIONS = translations/hexalate_ca.ts \
-	translations/hexalate_cs.ts \
-	translations/hexalate_de.ts \
-	translations/hexalate_en.ts \
-	translations/hexalate_es.ts \
-	translations/hexalate_et.ts \
-	translations/hexalate_fr.ts \
-	translations/hexalate_nl.ts \
-	translations/hexalate_ro.ts \
-	translations/hexalate_ru.ts \
-	translations/hexalate_tr.ts
+TRANSLATIONS = $$files(translations/hexalate_*.ts)
 
 RESOURCES = icons/icon.qrc
 macx {

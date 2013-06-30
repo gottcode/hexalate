@@ -1,6 +1,8 @@
 [Desktop Entry]
 Name=Hexalate
 GenericName=Color Matching Game
+GenericName[hu]=Színkereső játék
+GenericName[ro]=Joc de potrivire culori
 Exec=hexalate
 Icon=hexalate
 Terminal=false
