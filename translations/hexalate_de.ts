@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="de" sourcelanguage="en">
+<TS version="2.1" language="de" sourcelanguage="en">
 <context>
     <name>Board</name>
     <message>
@@ -106,17 +106,17 @@
     <message>
         <location filename="../src/window.cpp" line="49"/>
         <source>&amp;About</source>
-        <translation>&amp;Info</translation>
+        <translation>Üb&amp;er</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="50"/>
         <source>About &amp;Qt</source>
-        <translation>Info über &amp;Qt</translation>
+        <translation>Über &amp;Qt</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="73"/>
         <source>About Hexalate</source>
-        <translation>Info über Hexalate</translation>
+        <translation>Über Hexalate</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="75"/>
