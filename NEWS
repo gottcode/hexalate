@@ -1,0 +1,10 @@
+1.0.2
+-----
+* Added rotating pieces with any mouse button.
+* Added support for Qt 5.
+* Translation updates: Catalan, Czech, Estonian, French, German, Romanian,
+  Russian, Spanish, Turkish.
+
+1.0.1
+-----
+* Fixed crash on launch.
