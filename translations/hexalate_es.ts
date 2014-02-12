@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="es" sourcelanguage="en">
+<TS version="2.1" language="es" sourcelanguage="en">
 <context>
     <name>Board</name>
     <message>
@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/board.cpp" line="45"/>
         <source>Abort current game?</source>
-        <translation>¿Abortar la partida actual?</translation>
+        <translation>¿Quiere interrumpir la partida actual?</translation>
     </message>
 </context>
 <context>
@@ -24,7 +24,7 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Idioma del sistema&gt;</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
@@ -34,7 +34,7 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>Por favor, reinicie la aplicación para el cambio de idioma tenga efecto.</translation>
+        <translation>Reinicie la aplicación para el cambio de idioma surta efecto.</translation>
     </message>
 </context>
 <context>
@@ -47,7 +47,7 @@
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
         <source>Sorry</source>
-        <translation>Lo siento</translation>
+        <translation>Lo sentimos</translation>
     </message>
     <message>
         <location filename="../src/puzzle.cpp" line="204"/>
@@ -61,22 +61,22 @@
         <location filename="../src/window.cpp" line="33"/>
         <location filename="../src/window.cpp" line="74"/>
         <source>Hexalate</source>
-        <translation type="unfinished"></translation>
+        <translation>Hexalate</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="40"/>
         <source>&amp;Game</source>
-        <translation>&amp;Juego</translation>
+        <translation>&amp;Partida</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="41"/>
         <source>&amp;New</source>
-        <translation>&amp;Nuevo</translation>
+        <translation>&amp;Nueva</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="41"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="43"/>
@@ -86,17 +86,17 @@
     <message>
         <location filename="../src/window.cpp" line="43"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="45"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Configuraciones</translation>
+        <translation>&amp;Configuración</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="46"/>
         <source>Application &amp;Language...</source>
-        <translation>Idioma de la &amp;Aplicación...</translation>
+        <translation>&amp;Idioma de la aplicación…</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="48"/>
@@ -121,17 +121,17 @@
     <message>
         <location filename="../src/window.cpp" line="75"/>
         <source>A color matching game</source>
-        <translation>Un juego de combinación de colores</translation>
+        <translation>Un juego de igualación de colores</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="76"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="77"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation type="unfinished"></translation>
+        <translation>Publicado bajo la licencia &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
 </context>
 </TS>
