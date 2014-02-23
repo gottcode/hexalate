@@ -2,7 +2,7 @@
 
 APP='Hexalate'
 BUNDLE="$APP.app"
-VERSION=$(git rev-parse --short HEAD)
+VERSION='1.0.3'
 
 # Remove any previous disk folder or DMG
 echo -n 'Preparing... '
