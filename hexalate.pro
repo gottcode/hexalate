@@ -37,9 +37,7 @@ macx {
 	ICON = icons/hexalate.icns
 } else:win32 {
 	RC_FILE = icons/icon.rc
-}
-
-unix: !macx {
+} else:unix: {
 	isEmpty(PREFIX) {
 		PREFIX = /usr/local
 	}
@@ -61,5 +59,8 @@ unix: !macx {
 	qm.files = translations/*.qm
 	qm.path = $$PREFIX/share/hexalate/translations
 
-	INSTALLS += target icon pixmap desktop qm
+	man.files = doc/hexalate.6
+	man.path = $$PREFIX/share/man/man6
+
+	INSTALLS += target icon pixmap desktop qm man
 }
