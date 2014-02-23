@@ -1,15 +1,12 @@
+lessThan(QT_VERSION, 4.6) {
+	error("Hexalate requires Qt 4.6 or greater")
+}
+
 TEMPLATE = app
 greaterThan(QT_MAJOR_VERSION, 4) {
 	QT += widgets
 }
 CONFIG += warn_on
-macx {
-	CONFIG += x86_64
-}
-
-MOC_DIR = build
-OBJECTS_DIR = build
-RCC_DIR = build
 
 VERSION = 1.0.3
 DEFINES += VERSIONSTR=\\\"$${VERSION}\\\"

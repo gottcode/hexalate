@@ -38,16 +38,19 @@ Window::Window() {
 
 	// Create menus
 	QMenu* menu = menuBar()->addMenu(tr("&Game"));
-	menu->addAction(tr("&New"), board, SLOT(newGame()), tr("Ctrl+N"));
+	menu->addAction(tr("&New"), board, SLOT(newGame()), QKeySequence::New);
 	menu->addSeparator();
-	menu->addAction(tr("&Quit"), qApp, SLOT(quit()), tr("Ctrl+Q"));
+	QAction* action = menu->addAction(tr("&Quit"), qApp, SLOT(quit()), QKeySequence::Quit);
+	action->setMenuRole(QAction::QuitRole);
 
 	menu = menuBar()->addMenu(tr("&Settings"));
 	menu->addAction(tr("Application &Language..."), this, SLOT(setLocale()));
 
 	menu = menuBar()->addMenu(tr("&Help"));
-	menu->addAction(tr("&About"), this, SLOT(about()));
-	menu->addAction(tr("About &Qt"), qApp, SLOT(aboutQt()));
+	action = menu->addAction(tr("&About"), this, SLOT(about()));
+	action->setMenuRole(QAction::AboutRole);
+	action = menu->addAction(tr("About &Qt"), qApp, SLOT(aboutQt()));
+	action->setMenuRole(QAction::AboutQtRole);
 
 	// Restore size and position
 	restoreGeometry(QSettings().value("Geometry").toByteArray());

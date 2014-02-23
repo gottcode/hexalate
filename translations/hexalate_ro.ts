@@ -59,7 +59,7 @@
     <name>Window</name>
     <message>
         <location filename="../src/window.cpp" line="33"/>
-        <location filename="../src/window.cpp" line="74"/>
+        <location filename="../src/window.cpp" line="77"/>
         <source>Hexalate</source>
         <translation>Hexalate</translation>
     </message>
@@ -74,62 +74,52 @@
         <translation>&amp;Nou</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="41"/>
-        <source>Ctrl+N</source>
-        <translation>Ctrl+N</translation>
-    </message>
-    <message>
         <location filename="../src/window.cpp" line="43"/>
         <source>&amp;Quit</source>
         <translation>&amp;Ieşire</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="43"/>
-        <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
-    </message>
-    <message>
-        <location filename="../src/window.cpp" line="45"/>
+        <location filename="../src/window.cpp" line="46"/>
         <source>&amp;Settings</source>
         <translation>&amp;Setări</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="46"/>
+        <location filename="../src/window.cpp" line="47"/>
         <source>Application &amp;Language...</source>
         <translation>&amp;Limbă aplicaţie...</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="48"/>
+        <location filename="../src/window.cpp" line="49"/>
         <source>&amp;Help</source>
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="49"/>
+        <location filename="../src/window.cpp" line="50"/>
         <source>&amp;About</source>
         <translation>&amp;Despre</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="50"/>
+        <location filename="../src/window.cpp" line="52"/>
         <source>About &amp;Qt</source>
         <translation>Despre &amp;Qt</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="73"/>
+        <location filename="../src/window.cpp" line="76"/>
         <source>About Hexalate</source>
         <translation>Despre Hexalate</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="75"/>
+        <location filename="../src/window.cpp" line="78"/>
         <source>A color matching game</source>
         <translation>Un joc de potrivire a culorilor</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="76"/>
+        <location filename="../src/window.cpp" line="79"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
         <translation>Toate drepturile rezervate &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="77"/>
+        <location filename="../src/window.cpp" line="80"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
         <translation>Lansat sub licenţă &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
