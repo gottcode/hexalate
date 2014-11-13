@@ -56,11 +56,14 @@ macx {
 	desktop.files = icons/hexalate.desktop
 	desktop.path = $$PREFIX/share/applications
 
+	appdata.files = icons/hexalate.appdata.xml
+	appdata.path = $$PREFIX/share/appdata/
+
 	qm.files = translations/*.qm
 	qm.path = $$PREFIX/share/hexalate/translations
 
 	man.files = doc/hexalate.6
 	man.path = $$PREFIX/share/man/man6
 
-	INSTALLS += target icon pixmap desktop qm man
+	INSTALLS += target icon pixmap desktop appdata qm man
 }
