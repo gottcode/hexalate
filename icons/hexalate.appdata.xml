@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <id type="desktop">hexalate.desktop</id>
-  <licence>CC0</licence>
+<component type="desktop">
+  <id>hexalate.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Hexalate</name>
   <summary>Spin circles to match colors</summary>
   <description>
     <p>Hexalate is a color matching game. The goal of the game is to rotate and position the circles so that each touching line matches in color. You rotate circles by right clicking, and you move circles by dragging them. The game stores the positions and rotations of the circles across runs.</p>
   </description>
   <screenshots>
-    <screenshot width="752" type="default" height="453">http://gottcode.org/hexalate/screenshots/appdata.png</screenshot>
+    <screenshot width="752" type="default" height="453">
+      <image>http://gottcode.org/hexalate/screenshots/appdata.png</image>
+    </screenshot>
   </screenshots>
   <url type="homepage">http://gottcode.org/hexalate/</url>
-</application>
+  <url type="bugtracker">http://gottcode.org/hexalate/bugs/</url>
+  <url type="donation">http://gottcode.org/tip/</url>
+  <developer_name>Graeme Gott</developer_name>
+  <updatecontact>graeme@gottcode.org</updatecontact>
+  <provides>
+    <binary>hexalate</binary>
+  </provides>
+</component>
