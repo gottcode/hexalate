@@ -113,8 +113,7 @@ void Piece::setPosition(const QPointF& position) {
 
 /*****************************************************************************/
 
-void Piece::spin() {
-	int rotations = rand() % 6;
+void Piece::spin(int rotations) {
 	int angle = 90;
 	for (int i = 0; i < rotations; ++i) {
 		m_connectors.move(5, 0);

@@ -43,7 +43,7 @@ public:
 	bool setConnector(int offset, int value);
 	void setHighlight(bool highlight);
 	void setPosition(const QPointF& position);
-	void spin();
+	void spin(int rotations);
 
 	bool fromString(const QString& string);
 	QString toString() const;

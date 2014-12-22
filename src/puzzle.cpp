@@ -28,7 +28,7 @@
 #include <QSettings>
 
 #include <algorithm>
-#include <ctime>
+#include <random>
 
 /*****************************************************************************/
 
@@ -77,7 +77,8 @@ void Puzzle::generate() {
 	m_done = false;
 
 	// Set random seed
-	srand(time(0));
+	std::random_device rd;
+	std::mt19937 gen(rd());
 
 	// Add board background
 	createBackground();
@@ -89,7 +90,7 @@ void Puzzle::generate() {
 
 	// Create first piece
 	QList<int> colors = m_pieces.first()->colors();
-	std::random_shuffle(colors.begin(), colors.end());
+	std::shuffle(colors.begin(), colors.end(), gen);
 	for (int i = 0; i < 6; ++i) {
 		int color = colors.at(i);
 		m_pieces.first()->setConnector(i, color);
@@ -105,7 +106,8 @@ void Puzzle::generate() {
 		QList<int> colors2 = m_pieces.at(next)->colors();
 		colors = colors1 + colors2;
 		colors.erase(std::set_intersection(colors1.begin(), colors1.end(), colors2.begin(), colors2.end(), colors.begin()), colors.end());
-		int color = colors.at(rand() % colors.count());
+		std::uniform_int_distribution<int> dis(0, colors.count() - 1);
+		int color = colors.at(dis(gen));
 		m_pieces.at(i)->setConnector(offset, color);
 		m_pieces.at(next)->setConnector(match(offset), color);
 	}
@@ -114,7 +116,7 @@ void Puzzle::generate() {
 	for (int i = 1; i < 7; ++i) {
 		Piece* piece = m_pieces.at(i);
 		colors = piece->colors();
-		std::random_shuffle(colors.begin(), colors.end());
+		std::shuffle(colors.begin(), colors.end(), gen);
 		for (int j = 0; j < 6; ++j) {
 			if (piece->connector(j) == -1) {
 				piece->setConnector(j, colors.takeFirst());
@@ -123,9 +125,10 @@ void Puzzle::generate() {
 	}
 
 	// Randomize board
-	std::random_shuffle(m_pieces.begin(), m_pieces.end());
+	std::shuffle(m_pieces.begin(), m_pieces.end(), gen);
+	std::uniform_int_distribution<int> dis(0, 5);
 	for (Piece* piece : m_pieces) {
-		piece->spin();
+		piece->spin(dis(gen));
 	}
 
 	// Position pieces
