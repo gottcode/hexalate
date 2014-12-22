@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2014 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -124,7 +124,7 @@ void Puzzle::generate() {
 
 	// Randomize board
 	std::random_shuffle(m_pieces.begin(), m_pieces.end());
-	foreach (Piece* piece, m_pieces) {
+	for (Piece* piece : m_pieces) {
 		piece->spin();
 	}
 
@@ -224,7 +224,7 @@ void Puzzle::save() {
 
 void Puzzle::createBackground() {
 	QGraphicsItem* background = addEllipse(10, 10, 300, 300, QPen(Qt::darkGray, 2), Qt::gray);
-	foreach (const QPointF& position, positions) {
+	for (const QPointF& position : positions) {
 		QGraphicsItem* item = addEllipse(0, 0, 70, 70, Qt::NoPen, Qt::darkGray);
 		item->setPos(position + QPointF(15,15));
 		item->setParentItem(background);

@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2010 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2010, 2014 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -164,7 +164,7 @@ void Piece::mouseMoveEvent(QGraphicsSceneMouseEvent* event) {
 	// Find piece containing center
 	Piece* swap_piece = 0;
 	QList<QGraphicsItem*> items = scene()->items(sceneBoundingRect().center());
-	foreach (QGraphicsItem* item, items) {
+	for (QGraphicsItem* item : items) {
 		Piece* piece = qgraphicsitem_cast<Piece*>(item);
 		if (piece && piece != this) {
 			swap_piece = piece;
