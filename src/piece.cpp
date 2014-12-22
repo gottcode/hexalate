@@ -54,7 +54,7 @@ Piece::Piece(Puzzle* puzzle)
 	}
 
 	m_rotate_timer = new QTimer(this);
-	connect(m_rotate_timer, SIGNAL(timeout()), this, SLOT(rotateConnectors()));
+	connect(m_rotate_timer, &QTimer::timeout, this, &Piece::rotateConnectors);
 	m_rotate_timer->setInterval(40);
 
 	m_puzzle->addItem(this);
@@ -260,9 +260,9 @@ void Piece::moveTo(const QPointF& new_pos) {
 	animation->setPosAt(0, pos());
 	animation->setPosAt(1, new_pos);
 
-	connect(timeline, SIGNAL(finished()), this, SLOT(actionFinished()));
-	connect(timeline, SIGNAL(finished()), animation, SLOT(deleteLater()));
-	connect(timeline, SIGNAL(finished()), timeline, SLOT(deleteLater()));
+	connect(timeline, &QTimeLine::finished, this, &Piece::actionFinished);
+	connect(timeline, &QTimeLine::finished, animation, &QGraphicsItemAnimation::deleteLater);
+	connect(timeline, &QTimeLine::finished, timeline, &QTimeLine::deleteLater);
 	timeline->start();
 }
 
