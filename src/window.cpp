@@ -30,8 +30,6 @@
 /*****************************************************************************/
 
 Window::Window() {
-	setWindowTitle(tr("Hexalate"));
-
 	// Create game board
 	Board* board = new Board(this);
 	setCentralWidget(board);
