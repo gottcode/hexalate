@@ -46,7 +46,6 @@ Piece::Piece(Puzzle* puzzle)
 		m_connectors.append(-1);
 	}
 	setFlag(ItemIsMovable, true);
-	setCacheMode(DeviceCoordinateCache);
 	setHighlight(false);
 
 	for (int i = 0; i < 24; ++i) {
@@ -98,10 +97,8 @@ bool Piece::setConnector(int offset, int value) {
 /*****************************************************************************/
 
 void Piece::setHighlight(bool highlight) {
-	setCacheMode(NoCache);
 	setPen(QPen(highlight ? Qt::white : Qt::darkGray, 2));
 	setZValue(highlight ? 2 : 1);
-	setCacheMode(DeviceCoordinateCache);
 }
 
 /*****************************************************************************/
