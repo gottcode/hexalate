@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2014 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2014, 2015 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,6 +28,7 @@
 #include <QSettings>
 
 #include <algorithm>
+#include <ctime>
 #include <random>
 
 /*****************************************************************************/
@@ -77,8 +78,12 @@ void Puzzle::generate() {
 	m_done = false;
 
 	// Set random seed
+#ifndef Q_OS_WIN
 	std::random_device rd;
 	std::mt19937 gen(rd());
+#else
+	std::mt19937 gen(time(0));
+#endif
 
 	// Add board background
 	createBackground();
