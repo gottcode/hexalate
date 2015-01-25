@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# enz <markus.enzenberger@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2014-11-13 21:49+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-12-21 11:54+0000\n"
+"Last-Translator: enz <markus.enzenberger@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/hexalate/language/"
 "de/)\n"
 "Language: de\n"
@@ -24,7 +25,7 @@ msgstr "Hexalate"
 
 #: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
 msgid "Spin circles to match colors"
-msgstr ""
+msgstr "Drehen Sie Kreise, um Farben in Übereinstimmung zu bringen"
 
 #: ../hexalate.appdata.xml.in.h:3
 msgid ""
@@ -33,7 +34,12 @@ msgid ""
 "circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
 msgstr ""
+"Hexalate ist ein Farbenrätsel. Ziel des Spiels ist es, die Kreise so zu "
+"drehen und zu positionieren, dass alle sich berührenden Linien die gleiche "
+"Farbe haben. Sie können die Kreise durch einen rechten Mausklick rotieren "
+"und durch Ziehen mit der Maus positionieren. Das Spiel merkt sich den "
+"Spielstand, wenn Sie es beenden und neu starten."
 
 #: ../hexalate.desktop.in.h:2
 msgid "Color Matching Game"
-msgstr "Farbabstimmungsspiel"
+msgstr "Farbenrätsel"

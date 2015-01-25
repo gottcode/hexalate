@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Oprea Nicolae <jaff2002@yahoo.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2014-11-13 21:49+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-11-14 13:37+0000\n"
+"Last-Translator: Oprea Nicolae <jaff2002@yahoo.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/projects/p/hexalate/"
 "language/ro/)\n"
 "Language: ro\n"
@@ -25,7 +26,7 @@ msgstr "Hexalate"
 
 #: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
 msgid "Spin circles to match colors"
-msgstr ""
+msgstr "Rotiţi cercurile pentru potrivirea culorilor"
 
 #: ../hexalate.appdata.xml.in.h:3
 msgid ""
@@ -34,7 +35,12 @@ msgid ""
 "circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
 msgstr ""
+"Hexalate este un joc de potrivire a culorilor. Scopul jocului este de a roti "
+"şi poziţiona cercurile astfel încît fiecare linie care se atinge să se "
+"potrivească la culoare. Rotiţi cercurile cu clic dreapta, şi mutaţi "
+"cercurile prin glisarea acestora. Jocul stochează poziţiile şi rotaţiile "
+"cercurilor din întreaga rulare."
 
 #: ../hexalate.desktop.in.h:2
 msgid "Color Matching Game"
-msgstr "Joc de potrivire culori"
+msgstr "Joc de potrivire a culorilor"

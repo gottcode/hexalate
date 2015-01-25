@@ -17,22 +17,22 @@
 <context>
     <name>LocaleDialog</name>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="50"/>
+        <location filename="../src/locale_dialog.cpp" line="52"/>
         <source>Select application language:</source>
         <translation>Επιλέξτε γλώσσα εφαρμογής:</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="53"/>
+        <location filename="../src/locale_dialog.cpp" line="55"/>
         <source>&lt;System Language&gt;</source>
         <translation>&lt;Γλωσσα συστηματος&gt;</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="183"/>
+        <location filename="../src/locale_dialog.cpp" line="175"/>
         <source>Note</source>
         <translation>Παρατηρηση</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="183"/>
+        <location filename="../src/locale_dialog.cpp" line="175"/>
         <source>Please restart this application for the change in language to take effect.</source>
         <translation>Παρακαλώ κάντε επανεκκίνηση της εφαρμογής αυτής για αλλαγή στη γλώσσα να τεθεί σε ισχύ.</translation>
     </message>
@@ -40,17 +40,17 @@
 <context>
     <name>Puzzle</name>
     <message>
-        <location filename="../src/puzzle.cpp" line="162"/>
+        <location filename="../src/puzzle.cpp" line="170"/>
         <source>Success</source>
         <translation>Επιτυχία</translation>
     </message>
     <message>
-        <location filename="../src/puzzle.cpp" line="204"/>
+        <location filename="../src/puzzle.cpp" line="212"/>
         <source>Sorry</source>
         <translation>Συγνωμη</translation>
     </message>
     <message>
-        <location filename="../src/puzzle.cpp" line="204"/>
+        <location filename="../src/puzzle.cpp" line="212"/>
         <source>Unable to load previous game. Starting a new game.</source>
         <translation>Δεν είναι δυνατή η φόρτωση προηγούμενου παιχνίδιυ. Ξεκινηστε ένα νέο παιχνίδι.</translation>
     </message>
@@ -58,68 +58,68 @@
 <context>
     <name>Window</name>
     <message>
-        <location filename="../src/window.cpp" line="33"/>
-        <location filename="../src/window.cpp" line="77"/>
+        <location filename="../src/main.cpp" line="30"/>
+        <location filename="../src/window.cpp" line="75"/>
         <source>Hexalate</source>
         <translation>Hexalate</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="40"/>
+        <location filename="../src/window.cpp" line="38"/>
         <source>&amp;Game</source>
         <translation>Παιχνιδι</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="41"/>
+        <location filename="../src/window.cpp" line="39"/>
         <source>&amp;New</source>
         <translation>Νεο</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="43"/>
+        <location filename="../src/window.cpp" line="41"/>
         <source>&amp;Quit</source>
         <translation>Κλεισιμο</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="46"/>
+        <location filename="../src/window.cpp" line="44"/>
         <source>&amp;Settings</source>
         <translation>Ρυθμισεις</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="47"/>
+        <location filename="../src/window.cpp" line="45"/>
         <source>Application &amp;Language...</source>
         <translation>Γλωσσα συστηματος...</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="49"/>
+        <location filename="../src/window.cpp" line="47"/>
         <source>&amp;Help</source>
         <translation>Βοηθεια</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="50"/>
+        <location filename="../src/window.cpp" line="48"/>
         <source>&amp;About</source>
         <translation>Σχετικα</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="52"/>
+        <location filename="../src/window.cpp" line="50"/>
         <source>About &amp;Qt</source>
         <translation>Σχετικα με το Qt</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="76"/>
+        <location filename="../src/window.cpp" line="74"/>
         <source>About Hexalate</source>
         <translation>Σχετικα με το Hexalate</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="78"/>
+        <location filename="../src/window.cpp" line="76"/>
         <source>A color matching game</source>
         <translation>Ένα παιχνίδι αντιστοίχισης χρωμάτων</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="79"/>
+        <location filename="../src/window.cpp" line="77"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
         <translation>Copyright &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="80"/>
+        <location filename="../src/window.cpp" line="78"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
         <translation>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</translation>
     </message>

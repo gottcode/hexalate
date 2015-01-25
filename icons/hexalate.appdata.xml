@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Hexalate</name>
+  <name xml:lang="cs">Hexalate</name>
   <name xml:lang="de">Hexalate</name>
   <name xml:lang="es">Hexalate</name>
   <name xml:lang="hu">Hexalate</name>
@@ -15,8 +16,17 @@
   <name xml:lang="ro">Hexalate</name>
   <name xml:lang="tr">Hexalate</name>
   <summary>Spin circles to match colors</summary>
+  <summary xml:lang="cs">Otáčejte kruhy tak, aby se barvy shodovaly</summary>
+  <summary xml:lang="de">Drehen Sie Kreise, um Farben in Übereinstimmung zu bringen</summary>
+  <summary xml:lang="lt">Sukite ratus, kad sutaptų spalvos</summary>
+  <summary xml:lang="ms">Putar bulatan untuk padankan warna</summary>
+  <summary xml:lang="ro">Rotiţi cercurile pentru potrivirea culorilor</summary>
   <description>
     <p>Hexalate is a color matching game. The goal of the game is to rotate and position the circles so that each touching line matches in color. You rotate circles by right clicking, and you move circles by dragging them. The game stores the positions and rotations of the circles across runs.</p>
+    <p xml:lang="de">Hexalate ist ein Farbenrätsel. Ziel des Spiels ist es, die Kreise so zu drehen und zu positionieren, dass alle sich berührenden Linien die gleiche Farbe haben. Sie können die Kreise durch einen rechten Mausklick rotieren und durch Ziehen mit der Maus positionieren. Das Spiel merkt sich den Spielstand, wenn Sie es beenden und neu starten.</p>
+    <p xml:lang="lt">Hexalate yra spalvų sutapimo žaidimas. Žaidimo tikslas yra sukti ir nustatyti tokią ratų padėtį, kad kievienos susiliečiančios linijos spalva sutaptų. Jūs sukate ratus, spusteldami ant jų dešiniuoju pelės mygtukų, o tempdami - juos perkeliate. Paleidimo tarpais, žaidimas išsaugo ratų vietą ir pasukimą.</p>
+    <p xml:lang="ms">Hexalate merupakan permainan padanan warna. Matlamat permainan adalah untuk putar dan letak semula bulatan supaya setiap bahagian sepadan warnanya. Anda boleh putar dengan mengklik kanan, dan anda boleh alih bulatan dengan menyeretnya. Permainan menyimpan kedudukan dan putaran bulatan sepanjang permainan.</p>
+    <p xml:lang="ro">Hexalate este un joc de potrivire a culorilor. Scopul jocului este de a roti şi poziţiona cercurile astfel încît fiecare linie care se atinge să se potrivească la culoare. Rotiţi cercurile cu clic dreapta, şi mutaţi cercurile prin glisarea acestora. Jocul stochează poziţiile şi rotaţiile cercurilor din întreaga rulare.</p>
   </description>
   <screenshots>
     <screenshot type="default">

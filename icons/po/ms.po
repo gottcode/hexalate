@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# abuyop <abuyop@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2014-11-13 21:49+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-12-29 01:59+0000\n"
+"Last-Translator: abuyop <abuyop@gmail.com>\n"
 "Language-Team: Malay (Malaysia) (http://www.transifex.com/projects/p/"
 "hexalate/language/ms_MY/)\n"
 "Language: ms\n"
@@ -24,7 +25,7 @@ msgstr "Hexalate"
 
 #: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
 msgid "Spin circles to match colors"
-msgstr ""
+msgstr "Putar bulatan untuk padankan warna"
 
 #: ../hexalate.appdata.xml.in.h:3
 msgid ""
@@ -33,7 +34,12 @@ msgid ""
 "circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
 msgstr ""
+"Hexalate merupakan permainan padanan warna. Matlamat permainan adalah untuk "
+"putar dan letak semula bulatan supaya setiap bahagian sepadan warnanya. Anda "
+"boleh putar dengan mengklik kanan, dan anda boleh alih bulatan dengan "
+"menyeretnya. Permainan menyimpan kedudukan dan putaran bulatan sepanjang "
+"permainan."
 
 #: ../hexalate.desktop.in.h:2
 msgid "Color Matching Game"
-msgstr "Permainan Memadankan Warna"
+msgstr "Permainan Padanan Warna"
