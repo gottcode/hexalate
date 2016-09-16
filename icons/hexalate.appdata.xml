@@ -21,6 +21,7 @@
   <summary xml:lang="lt">Sukite ratus, kad sutaptų spalvos</summary>
   <summary xml:lang="ms">Putar bulatan untuk padankan warna</summary>
   <summary xml:lang="ro">Rotiţi cercurile pentru potrivirea culorilor</summary>
+
   <description>
     <p>Hexalate is a color matching game. The goal of the game is to rotate and position the circles so that each touching line matches in color. You rotate circles by right clicking, and you move circles by dragging them. The game stores the positions and rotations of the circles across runs.</p>
     <p xml:lang="de">Hexalate ist ein Farbenrätsel. Ziel des Spiels ist es, die Kreise so zu drehen und zu positionieren, dass alle sich berührenden Linien die gleiche Farbe haben. Sie können die Kreise durch einen rechten Mausklick rotieren und durch Ziehen mit der Maus positionieren. Das Spiel merkt sich den Spielstand, wenn Sie es beenden und neu starten.</p>
@@ -28,17 +29,52 @@
     <p xml:lang="ms">Hexalate merupakan permainan padanan warna. Matlamat permainan adalah untuk putar dan letak semula bulatan supaya setiap bahagian sepadan warnanya. Anda boleh putar dengan mengklik kanan, dan anda boleh alih bulatan dengan menyeretnya. Permainan menyimpan kedudukan dan putaran bulatan sepanjang permainan.</p>
     <p xml:lang="ro">Hexalate este un joc de potrivire a culorilor. Scopul jocului este de a roti şi poziţiona cercurile astfel încît fiecare linie care se atinge să se potrivească la culoare. Rotiţi cercurile cu clic dreapta, şi mutaţi cercurile prin glisarea acestora. Jocul stochează poziţiile şi rotaţiile cercurilor din întreaga rulare.</p>
   </description>
+
   <screenshots>
     <screenshot type="default">
-      <image>http://gottcode.org/hexalate/screenshots/appdata.png</image>
+      <image>https://gottcode.org/hexalate/screenshots/appdata.png</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">http://gottcode.org/hexalate/</url>
-  <url type="bugtracker">http://gottcode.org/hexalate/bugs/</url>
-  <url type="donation">http://gottcode.org/tip/</url>
+
+  <url type="homepage">https://gottcode.org/hexalate/</url>
+  <url type="bugtracker">https://gottcode.org/hexalate/bugs/</url>
+  <url type="donation">https://gottcode.org/tip/</url>
+  <url type="translate">https://www.transifex.com/projects/p/hexalate/</url>
+
   <developer_name>Graeme Gott</developer_name>
-  <updatecontact>graeme@gottcode.org</updatecontact>
+  <update_contact>graeme@gottcode.org</update_contact>
+
+  <translation type="qt">hexalate</translation>
+
   <provides>
     <binary>hexalate</binary>
   </provides>
+
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+  </kudos>
+
+  <content_rating type="oars-1.0">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">none</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+    <content_attribute id="social-audio">none</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">none</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
 </component>
