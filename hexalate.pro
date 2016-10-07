@@ -78,6 +78,7 @@ macx {
 
 	qm.files = translations/*.qm
 	qm.path = $$PREFIX/share/hexalate/translations
+	qm.CONFIG += no_check_exist
 
 	man.files = doc/hexalate.6
 	man.path = $$PREFIX/share/man/man6
