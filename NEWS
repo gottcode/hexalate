@@ -1,3 +1,14 @@
+1.1.0
+-----
+* Added support for high DPI displays.
+* Switched to C++11 random classes.
+* Removed support for Qt 4.
+* Generate binary translations at build time.
+* FIXED: Was not properly loading Qt translations.
+* FIXED: Application layout did not respect RTL languages.
+* Translation updates: Czech, Dutch, German, Greek, Hungarian, Italian,
+  Lithuanian, Malay, Polish, Portuguese (Brazil), Romanian, Russian, Spanish.
+
 1.0.3
 -----
 * Added README file.
