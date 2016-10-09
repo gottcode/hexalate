@@ -70,7 +70,7 @@
     </message>
     <message>
         <source>Application &amp;Language...</source>
-        <translation>&amp;Anwendungssprache...</translation>
+        <translation>&amp;Anwendungssprache ...</translation>
     </message>
     <message>
         <source>&amp;Help</source>

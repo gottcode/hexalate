@@ -20,7 +20,7 @@
     </message>
     <message>
         <source>&lt;System Language&gt;</source>
-        <translation>&lt;Sistemos Kalba&gt;</translation>
+        <translation>&lt;Sistemos kalba&gt;</translation>
     </message>
     <message>
         <source>Note</source>
@@ -70,7 +70,7 @@
     </message>
     <message>
         <source>Application &amp;Language...</source>
-        <translation>Programos Kalba</translation>
+        <translation>Programos kalba</translation>
     </message>
     <message>
         <source>&amp;Help</source>
@@ -94,7 +94,7 @@
     </message>
     <message>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation>Autorinės Teisės &amp;copy; 2009-%1 Graeme Gott</translation>
+        <translation>Autorių Teisės &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>

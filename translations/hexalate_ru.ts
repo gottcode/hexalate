@@ -78,15 +78,15 @@
     </message>
     <message>
         <source>&amp;About</source>
-        <translation>&amp;Об</translation>
+        <translation>&amp;Об игре</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation>Об &amp;Qt</translation>
+        <translation>О &amp;Qt</translation>
     </message>
     <message>
         <source>About Hexalate</source>
-        <translation>Об Hexalate</translation>
+        <translation>О Hexalate</translation>
     </message>
     <message>
         <source>A color matching game</source>

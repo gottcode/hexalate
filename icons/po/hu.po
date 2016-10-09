@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Balázs Úr <urbalazs@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2014-11-13 21:49+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Hungarian (http://www.transifex.com/projects/p/hexalate/"
+"PO-Revision-Date: 2015-04-09 14:58+0000\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"Language-Team: Hungarian (http://www.transifex.com/gottcode/hexalate/"
 "language/hu/)\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +25,7 @@ msgstr "Hexalate"
 
 #: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
 msgid "Spin circles to match colors"
-msgstr ""
+msgstr "Forgassa a köröket a színek illesztéséhez"
 
 #: ../hexalate.appdata.xml.in.h:3
 msgid ""
@@ -33,7 +34,11 @@ msgid ""
 "circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
 msgstr ""
+"A Hexalate egy színpárosító játék. A játék célja a körök forgatása és "
+"áthelyezése úgy, hogy minden érintkező vonal színben illeszkedjen. A köröket "
+"a jobb kattintással forgathatja, és húzással mozgathatja azokat. A játék "
+"eltárolja a körök pozícióit és forgatásait a futtatások között."
 
 #: ../hexalate.desktop.in.h:2
 msgid "Color Matching Game"
-msgstr "Színkereső játék"
+msgstr "Színpárosító játék"
