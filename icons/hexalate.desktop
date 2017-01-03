@@ -34,6 +34,7 @@ Comment[lt]=Sukite ratus, kad sutaptų spalvos
 Comment[ms]=Putar bulatan untuk padankan warna
 Comment[nl]=Draai cirkels om kleuren te koppelen
 Comment[pl]=Obróć koła, aby dopasować kolory
+Comment[pt_BR]=Rode os círculos para combinar as cores.
 Comment[ro]=Rotiţi cercurile pentru potrivirea culorilor
 Comment[ru]=Вращайте круги, чтобы сопоставить цвета
 Exec=hexalate

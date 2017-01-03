@@ -25,6 +25,7 @@
   <summary xml:lang="ms">Putar bulatan untuk padankan warna</summary>
   <summary xml:lang="nl">Draai cirkels om kleuren te koppelen</summary>
   <summary xml:lang="pl">Obróć koła, aby dopasować kolory</summary>
+  <summary xml:lang="pt_BR">Rode os círculos para combinar as cores.</summary>
   <summary xml:lang="ro">Rotiţi cercurile pentru potrivirea culorilor</summary>
   <summary xml:lang="ru">Вращайте круги, чтобы сопоставить цвета</summary>
 
@@ -37,6 +38,7 @@
     <p xml:lang="ms">Hexalate merupakan permainan padanan warna. Matlamat permainan adalah untuk putar dan letak semula bulatan supaya setiap bahagian sepadan warnanya. Anda boleh putar dengan mengklik kanan, dan anda boleh alih bulatan dengan menyeretnya. Permainan menyimpan kedudukan dan putaran bulatan sepanjang permainan.</p>
     <p xml:lang="nl">Hexalate is een kleurkoppel spel. Het doel is om de cirkels zo te draaien en te positioneren dat elke koppellijn dezelfde kleur heeft. Cirkels kun je draaien door de rechtermuisklik en verplaatsen door ze te slepen. Het spel slaat de positie en de rotaties van de cirkels tijdens het spel op.</p>
     <p xml:lang="pl">Hexalate jest grą dopasowania kolorów. Celem gry jest obrócić i ustawić koła, tak aby ich linie były dopasowane do tych samych kolorów. Możesz obracać koła klikając prawym przyciskiem myszy i przenosić je przeciągnięciem myszy. Gra zapisuje pozycje i obroty kół przy następnym uruchomieniu.</p>
+    <p xml:lang="pt_BR">Hexalate é um jogo de combinação de cores. O objetivo do jogo é rodar e posicionar os círculos para que cada linha seja combinada com as mesmas cores. Você roda os círculos apertando o botão direito do mouse, e move os círculos arrastando-os. O jogo guarda as posições e rotações dos círculos através das rodadas.</p>
     <p xml:lang="ro">Hexalate este un joc de potrivire a culorilor. Scopul jocului este de a roti şi poziţiona cercurile astfel încît fiecare linie care se atinge să se potrivească la culoare. Rotiţi cercurile cu clic dreapta, şi mutaţi cercurile prin glisarea acestora. Jocul stochează poziţiile şi rotaţiile cercurilor din întreaga rulare.</p>
     <p xml:lang="ru">Hexalate - игра сопоставления цветов. Цель игры состоит в том, чтобы вращать и перемещать круги так, что бы каждый цветной луч касался другого луча такого же цвета. Круги можно вращать и перемещать правой кнопкой мыши. Игра сохраняет позиции кругов и можно продолжить играть при следующем запуске.</p>
   </description>

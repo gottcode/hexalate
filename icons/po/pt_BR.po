@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Jonathan Andrade <jonyandrade.silva@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2014-11-13 21:49+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
+"PO-Revision-Date: 2016-12-01 14:50+0000\n"
+"Last-Translator: Jonathan Andrade <jonyandrade.silva@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/gottcode/"
 "hexalate/language/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +25,7 @@ msgstr "Hexalate"
 
 #: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
 msgid "Spin circles to match colors"
-msgstr ""
+msgstr "Rode os círculos para combinar as cores."
 
 #: ../hexalate.appdata.xml.in.h:3
 msgid ""
@@ -33,6 +34,11 @@ msgid ""
 "circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
 msgstr ""
+"Hexalate é um jogo de combinação de cores. O objetivo do jogo é rodar e "
+"posicionar os círculos para que cada linha seja combinada com as mesmas "
+"cores. Você roda os círculos apertando o botão direito do mouse, e move os "
+"círculos arrastando-os. O jogo guarda as posições e rotações dos círculos "
+"através das rodadas."
 
 #: ../hexalate.desktop.in.h:2
 msgid "Color Matching Game"
