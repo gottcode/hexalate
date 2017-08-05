@@ -4,7 +4,7 @@
 !define APPNAME "Hexalate"
 !define VERSIONMAJOR 1
 !define VERSIONMINOR 1
-!define VERSIONPATCH 0
+!define VERSIONPATCH 1
 !define APPVERSION "${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONPATCH}"
 !define ABOUTURL "https://gottcode.org/hexalate/"
 
