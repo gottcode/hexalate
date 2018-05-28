@@ -8,25 +8,25 @@ msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2014-11-13 21:49+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/"
-"hexalate/language/tr_TR/)\n"
+"PO-Revision-Date: 2018-05-28 15:44+0000\n"
+"Last-Translator: Graeme Gott <graeme@gottcode.org>\n"
+"Language-Team: Turkish (Turkey) (http://www.transifex.com/gottcode/hexalate/"
+"language/tr_TR/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:1
+#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
 msgid "Hexalate"
 msgstr "Hexalate"
 
-#: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
+#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
 msgid "Spin circles to match colors"
 msgstr ""
 
-#: ../hexalate.appdata.xml.in.h:3
+#: ../hexalate.appdata.xml.in:10
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
 "position the circles so that each touching line matches in color. You rotate "
@@ -34,6 +34,6 @@ msgid ""
 "stores the positions and rotations of the circles across runs."
 msgstr ""
 
-#: ../hexalate.desktop.in.h:2
+#: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
 msgstr "Renk Eşleştirme Oyunu"

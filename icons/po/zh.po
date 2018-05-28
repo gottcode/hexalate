@@ -19,15 +19,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:1
+#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
 msgid "Hexalate"
 msgstr "Hexalate"
 
-#: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
+#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
 msgid "Spin circles to match colors"
 msgstr "旋转圆盘以搭配颜色"
 
-#: ../hexalate.appdata.xml.in.h:3
+#: ../hexalate.appdata.xml.in:10
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
 "position the circles so that each touching line matches in color. You rotate "
@@ -38,6 +38,6 @@ msgstr ""
 "线颜色一致。单击以旋转圆盘，拖拽以移动圆盘。本游戏会保存上次退出时的圆盘位置"
 "和旋转情况。"
 
-#: ../hexalate.desktop.in.h:2
+#: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
 msgstr "颜色搭配游戏"

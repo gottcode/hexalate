@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2014-12-28 09:32+0000\n"
+"PO-Revision-Date: 2017-09-23 20:29+0000\n"
 "Last-Translator: fri\n"
-"Language-Team: Czech (http://www.transifex.com/projects/p/hexalate/language/"
+"Language-Team: Czech (http://www.transifex.com/gottcode/hexalate/language/"
 "cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:1
+#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
 msgid "Hexalate"
 msgstr "Hexalate"
 
-#: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
+#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
 msgid "Spin circles to match colors"
 msgstr "Otáčejte kruhy tak, aby se barvy shodovaly"
 
-#: ../hexalate.appdata.xml.in.h:3
+#: ../hexalate.appdata.xml.in:10
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
 "position the circles so that each touching line matches in color. You rotate "
@@ -35,6 +35,6 @@ msgid ""
 "stores the positions and rotations of the circles across runs."
 msgstr ""
 
-#: ../hexalate.desktop.in.h:2
+#: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
 msgstr "Hra o shodě barev"

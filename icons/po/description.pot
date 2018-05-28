@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Graeme Gott
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the Hexalate package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:1
+#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
 msgid "Hexalate"
 msgstr ""
 
-#: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
+#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
 msgid "Spin circles to match colors"
 msgstr ""
 
-#: ../hexalate.appdata.xml.in.h:3
+#: ../hexalate.appdata.xml.in:10
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
 "position the circles so that each touching line matches in color. You rotate "
@@ -33,6 +33,6 @@ msgid ""
 "stores the positions and rotations of the circles across runs."
 msgstr ""
 
-#: ../hexalate.desktop.in.h:2
+#: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
 msgstr ""

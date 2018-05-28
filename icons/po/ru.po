@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2015-04-09 13:08+0000\n"
+"PO-Revision-Date: 2017-09-23 20:29+0000\n"
 "Last-Translator: Alexandr Uspensky <AlexandrUSP@yandex.com>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/gottcode/hexalate/"
 "language/ru_RU/)\n"
@@ -21,15 +21,15 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:1
+#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
 msgid "Hexalate"
 msgstr "Hexalate"
 
-#: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
+#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
 msgid "Spin circles to match colors"
 msgstr "Вращайте круги, чтобы сопоставить цвета"
 
-#: ../hexalate.appdata.xml.in.h:3
+#: ../hexalate.appdata.xml.in:10
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
 "position the circles so that each touching line matches in color. You rotate "
@@ -41,6 +41,6 @@ msgstr ""
 "такого же цвета. Круги можно вращать и перемещать правой кнопкой мыши. Игра "
 "сохраняет позиции кругов и можно продолжить играть при следующем запуске."
 
-#: ../hexalate.desktop.in.h:2
+#: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
 msgstr "Игра подбора цветов"

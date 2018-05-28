@@ -9,25 +9,25 @@ msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2014-12-29 01:59+0000\n"
+"PO-Revision-Date: 2017-09-21 13:52+0000\n"
 "Last-Translator: abuyop <abuyop@gmail.com>\n"
-"Language-Team: Malay (Malaysia) (http://www.transifex.com/projects/p/"
-"hexalate/language/ms_MY/)\n"
+"Language-Team: Malay (Malaysia) (http://www.transifex.com/gottcode/hexalate/"
+"language/ms_MY/)\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:1
+#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
 msgid "Hexalate"
 msgstr "Hexalate"
 
-#: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
+#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
 msgid "Spin circles to match colors"
 msgstr "Putar bulatan untuk padankan warna"
 
-#: ../hexalate.appdata.xml.in.h:3
+#: ../hexalate.appdata.xml.in:10
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
 "position the circles so that each touching line matches in color. You rotate "
@@ -40,6 +40,6 @@ msgstr ""
 "menyeretnya. Permainan menyimpan kedudukan dan putaran bulatan sepanjang "
 "permainan."
 
-#: ../hexalate.desktop.in.h:2
+#: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
 msgstr "Permainan Padanan Warna"

@@ -13,21 +13,21 @@ msgstr ""
 "Last-Translator: Rui <xymarior@yandex.com>\n"
 "Language-Team: Portuguese (Portugal) (http://www.transifex.com/gottcode/"
 "hexalate/language/pt_PT/)\n"
-"Language: pt_PT\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:1
+#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
 msgid "Hexalate"
 msgstr "Hexalate"
 
-#: ../hexalate.appdata.xml.in.h:2 ../hexalate.desktop.in.h:3
+#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
 msgid "Spin circles to match colors"
 msgstr "Rode os círculos para corresponder as cores"
 
-#: ../hexalate.appdata.xml.in.h:3
+#: ../hexalate.appdata.xml.in:10
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
 "position the circles so that each touching line matches in color. You rotate "
@@ -40,6 +40,6 @@ msgstr ""
 "círculos arrastando-os. O jogo armazena as posições e rotações dos círculos "
 "entre execuções da aplicação."
 
-#: ../hexalate.desktop.in.h:2
+#: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
 msgstr "Jogo de Correspondência de Cores"
