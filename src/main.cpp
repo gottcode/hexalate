@@ -40,6 +40,7 @@ int main(int argc, char** argv) {
 	app.setOrganizationName("GottCode");
 #if !defined(Q_OS_WIN) && !defined(Q_OS_MAC)
 	app.setWindowIcon(QIcon::fromTheme("hexalate", QIcon(":/hexalate.png")));
+	app.setDesktopFileName("hexalate");
 #endif
 	app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
