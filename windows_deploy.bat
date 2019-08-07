@@ -3,7 +3,7 @@
 @ECHO OFF
 
 SET APP=Hexalate
-SET VERSION=1.1.4
+SET VERSION=1.1.5
 
 ECHO Copying executable
 MKDIR %APP%
