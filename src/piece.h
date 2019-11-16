@@ -68,7 +68,7 @@ private slots:
 
 private:
 	void moveTo(const QPointF& new_pos);
-	void rotate();
+	void rotate(bool right);
 
 	Puzzle* m_puzzle;
 	QList<int> m_colors;
@@ -80,6 +80,7 @@ private:
 	Piece* m_swap_piece;
 	QPoint m_start_position;
 	bool m_clicked;
+	bool m_clicked_right;
 };
 
 #endif
