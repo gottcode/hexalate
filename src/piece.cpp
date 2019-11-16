@@ -28,6 +28,7 @@ Piece::Piece(Puzzle* puzzle)
 	, m_rotations(0)
 	, m_swap_piece(nullptr)
 	, m_clicked(false)
+	, m_clicked_right(false)
 {
 	for (int i = 0; i < 6; ++i) {
 		m_colors.append(i);
@@ -196,6 +197,7 @@ void Piece::mousePressEvent(QGraphicsSceneMouseEvent* event)
 	}
 	m_start_position = event->screenPos();
 	m_clicked = true;
+	m_clicked_right = event->button() == Qt::RightButton;
 	QGraphicsEllipseItem::mousePressEvent(event);
 }
 
@@ -223,14 +225,24 @@ void Piece::mouseReleaseEvent(QGraphicsSceneMouseEvent* event)
 void Piece::rotateConnectors()
 {
 	float angle = m_gradient.angle();
-	angle -= 20;
+	if (m_rotations > 0) {
+		angle -= 20;
+	} else {
+		angle += 20;
+	}
 	if (angle < 0) {
 		angle += 360;
+	} else if (angle > 360) {
+		angle -= 360;
 	}
 	m_gradient.setAngle(angle);
 	setBrush(m_gradient);
 
-	m_rotations--;
+	if (m_rotations > 0) {
+		--m_rotations;
+	} else if (m_rotations < 0) {
+		++m_rotations;
+	}
 	if (m_rotations == 0) {
 		m_rotate_timer->stop();
 		actionFinished();
@@ -271,8 +283,13 @@ void Piece::moveTo(const QPointF& new_pos)
 
 void Piece::rotate()
 {
-	m_connectors.move(5, 0);
-	m_rotations += 3;
+	if (!m_clicked_right) {
+		m_connectors.move(5, 0);
+		m_rotations += 3;
+	} else {
+		m_connectors.move(0, 5);
+		m_rotations -= 3;
+	}
 	if (!m_rotate_timer->isActive()) {
 		m_rotate_timer->start();
 		setFlag(ItemIsMovable, false);
