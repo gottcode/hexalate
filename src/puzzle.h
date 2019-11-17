@@ -30,6 +30,7 @@ public:
 	~Puzzle();
 
 	void generate();
+	void redraw();
 
 	bool isDone();
 

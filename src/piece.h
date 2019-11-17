@@ -44,6 +44,7 @@ public:
 	void setHighlight(bool highlight);
 	void setPosition(const QPointF& position);
 	void spin(int rotations);
+	void redraw();
 
 	bool fromString(const QString& string);
 	QString toString() const;

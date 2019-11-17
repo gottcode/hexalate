@@ -21,6 +21,8 @@
 #define WINDOW_H
 
 #include <QMainWindow>
+class Board;
+class QAction;
 
 class Window : public QMainWindow {
 	Q_OBJECT
@@ -33,6 +35,12 @@ protected:
 private slots:
 	void setLocale();
 	void about();
+
+private:
+	Board* board = nullptr;
+
+	void fillActionStyle(QAction* action, bool checked);
+	void fillActionColor(QAction* action, bool checked);
 };
 
 #endif

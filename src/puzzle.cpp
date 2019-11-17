@@ -71,6 +71,11 @@ Puzzle::~Puzzle() {
 
 /*****************************************************************************/
 
+void Puzzle::redraw() {
+	for (auto& p: m_pieces)
+		p->redraw();
+}
+
 void Puzzle::generate() {
 	// Remove old game
 	clear();

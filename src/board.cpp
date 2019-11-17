@@ -22,6 +22,8 @@
 #include "puzzle.h"
 
 #include <QMessageBox>
+#include <QSettings>
+#include <QAction>
 
 /*****************************************************************************/
 
@@ -53,6 +55,69 @@ void Board::newGame() {
 void Board::resizeEvent(QResizeEvent* event) {
 	fitInView(sceneRect(), Qt::KeepAspectRatio);
 	QGraphicsView::resizeEvent(event);
+}
+
+/*****************************************************************************/
+
+int Board::getCurColor()
+{
+	return std::min(QSettings().value("Colors").toInt(), colorsMax);
+}
+int Board::getCurStyle()
+{
+	return std::min(QSettings().value("Styles").toInt(), stylesMax);
+}
+
+//  colors
+void Board::colors0() {  colorsSet(0);  }
+void Board::colors1() {  colorsSet(1);  }
+void Board::colors2() {  colorsSet(2);  }
+void Board::colors3() {  colorsSet(3);  }
+void Board::colors4() {  colorsSet(4);  }
+void Board::colors5() {  colorsSet(5);  }
+
+void Board::colorsNext() {
+	int clr = getCurColor();
+	++clr;
+	if (clr > colorsMax)
+		clr = 0;
+	colorsSet(clr);
+}
+
+void Board::colorsSet(int val) {
+	QSettings().setValue("Colors", val);
+	m_puzzle->redraw();
+
+	for (int i=0; i < actionsColor.size(); ++i)
+		actionsColor[i]->setChecked(i == val);
+}
+
+//  styles
+void Board::styles0() {  stylesSet(0);  }
+void Board::styles1() {  stylesSet(1);  }
+void Board::styles2() {  stylesSet(2);  }
+void Board::styles3() {  stylesSet(3);  }
+void Board::styles4() {  stylesSet(4);  }
+void Board::styles5() {  stylesSet(5);  }
+void Board::styles6() {  stylesSet(6);  }
+void Board::styles7() {  stylesSet(7);  }
+void Board::styles8() {  stylesSet(8);  }
+void Board::styles9() {  stylesSet(9);  }
+
+void Board::stylesNext() {
+	int style = getCurStyle();
+	++style;
+	if (style > stylesMax)
+		style = 0;
+	stylesSet(style);
+}
+
+void Board::stylesSet(int val) {
+	QSettings().setValue("Styles", val);
+	m_puzzle->redraw();
+
+	for (int i=0; i < actionsStyle.size(); ++i)
+		actionsStyle[i]->setChecked(i == val);
 }
 
 /*****************************************************************************/

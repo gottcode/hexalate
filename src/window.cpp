@@ -26,23 +26,69 @@
 #include <QMenuBar>
 #include <QMessageBox>
 #include <QSettings>
+#include <QStatusBar>
+
+/*****************************************************************************/
+
+void Window::fillActionStyle(QAction* action, bool checked)
+{
+	action->setCheckable(true);
+	action->setChecked(checked);
+	board->actionsStyle.append(action);
+}
+
+void Window::fillActionColor(QAction* action, bool checked)
+{
+	action->setCheckable(true);
+	action->setChecked(checked);
+	board->actionsColor.append(action);
+}
 
 /*****************************************************************************/
 
 Window::Window() {
 	// Create game board
-	Board* board = new Board(this);
+	board = new Board(this);
 	setCentralWidget(board);
 
 	// Create menus
 	QMenu* menu = menuBar()->addMenu(tr("&Game"));
-	menu->addAction(tr("&New"), board, SLOT(newGame()), QKeySequence::New);
-	menu->addSeparator();
-	QAction* action = menu->addAction(tr("&Quit"), qApp, SLOT(quit()), QKeySequence::Quit);
+	QAction* action = menu->addAction(tr("&New"), board, SLOT(newGame()), QKeySequence::New);
+	action = menu->addAction(tr("&Quit"), qApp, SLOT(quit()), QKeySequence::Quit);
 	action->setMenuRole(QAction::QuitRole);
 
 	menu = menuBar()->addMenu(tr("&Settings"));
 	menu->addAction(tr("Application &Language..."), this, SLOT(setLocale()));
+	menu->addSeparator();
+
+	int style = board->getCurStyle();
+	QMenu* menu2 = menu->addMenu(tr("&Styles"));
+	action = menu2->addAction(tr("&Next"), board, SLOT(stylesNext()), QKeySequence("F3"));
+	menu2->addSeparator();
+	board->actionsColor.clear();
+	action = menu2->addAction(tr("&Short"),  board, SLOT(styles0()));  fillActionStyle(action, style == 0);
+	action = menu2->addAction(tr("&Medium"), board, SLOT(styles1()));  fillActionStyle(action, style == 1);
+	action = menu2->addAction(tr("&Thick"),  board, SLOT(styles2()));  fillActionStyle(action, style == 2);
+	action = menu2->addAction(tr("&Full"),   board, SLOT(styles3()));  fillActionStyle(action, style == 3);
+	menu2->addSeparator();
+	action = menu2->addAction(tr("Two"),       board, SLOT(styles4()));  fillActionStyle(action, style == 4);
+	action = menu2->addAction(tr("Two fat"),   board, SLOT(styles5()));  fillActionStyle(action, style == 5);
+	action = menu2->addAction(tr("X thin"),    board, SLOT(styles6()));  fillActionStyle(action, style == 6);
+	action = menu2->addAction(tr("X fat"),     board, SLOT(styles7()));  fillActionStyle(action, style == 7);
+	action = menu2->addAction(tr("Odd 1"),     board, SLOT(styles8()));  fillActionStyle(action, style == 8);
+	action = menu2->addAction(tr("Odd 1 fat"), board, SLOT(styles9()));  fillActionStyle(action, style == 9);
+
+	int clr = board->getCurColor();
+	menu2 = menu->addMenu(tr("&Colors"));
+	action = menu2->addAction(tr("&Next"), board, SLOT(colorsNext()), QKeySequence("F4"));
+	menu2->addSeparator();
+	board->actionsColor.clear();
+	action = menu2->addAction(tr("&Basic"),  board, SLOT(colors0()));  fillActionColor(action, clr == 0);
+	action = menu2->addAction(tr("&New"),    board, SLOT(colors1()));  fillActionColor(action, clr == 1);
+	action = menu2->addAction(tr("&Jungle"), board, SLOT(colors2()));  fillActionColor(action, clr == 2);
+	action = menu2->addAction(tr("&Fire"),   board, SLOT(colors3()));  fillActionColor(action, clr == 3);
+	action = menu2->addAction(tr("&Dark"),   board, SLOT(colors4()));  fillActionColor(action, clr == 4);
+	action = menu2->addAction(tr("&Light"),  board, SLOT(colors5()));  fillActionColor(action, clr == 5);
 
 	menu = menuBar()->addMenu(tr("&Help"));
 	action = menu->addAction(tr("&About"), this, SLOT(about()));

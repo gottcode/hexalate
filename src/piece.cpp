@@ -20,6 +20,7 @@
 #include "piece.h"
 
 #include "puzzle.h"
+#include "board.h"
 
 #include <QApplication>
 #include <QGraphicsItemAnimation>
@@ -31,6 +32,59 @@
 #include <QRadialGradient>
 #include <QTimeLine>
 #include <QTimer>
+#include <QSettings>
+
+/*****************************************************************************/
+
+const static int slices_styles[Board::stylesMax+1] = {
+	24, 18, 12, 6,
+	15, 9,  16, 8,  11, 5,
+};
+
+const static QColor connector_colors[Board::colorsMax+1][6] =
+{{
+	QColor(255,   0,   0),  // basic
+	QColor(255, 255,   0),
+	QColor(  0, 255,   0),
+	QColor(  0, 255, 255),
+	QColor(  0,   0, 255),
+	QColor(255,   0, 255)
+},{
+	QColor(255,  60,   0),  // new
+	QColor(255, 200,   0),
+	QColor( 90, 255,   0),
+	QColor(  0, 255, 255),
+	QColor(  0, 100, 255),
+	QColor(200, 100, 255)
+},{
+	QColor(125, 255,  20),  // green
+	QColor(120, 255, 120),
+	QColor( 20, 255, 160),
+	QColor(160, 220, 190),
+	QColor( 20, 120,  20),
+	QColor(125, 170,  20)
+},{
+	QColor(140,   0,   0),  // fire
+	QColor(255,   0,   0),
+	QColor(220,  70,   0),
+	QColor(255, 140,   0),
+	QColor(255, 200,   0),
+	QColor(255, 255,  60)
+},{
+	QColor( 10,  40, 120),  // dark
+	QColor(140, 160, 180),
+	QColor( 80,  80, 120),
+	QColor(120,  60,  90),
+	QColor(160,  80,   0),
+	QColor(180,  20,   0)
+},{
+	QColor(180, 220, 255),  // light
+	QColor(255, 255, 180),
+	QColor(220, 255, 255),
+	QColor(220, 255, 200),
+	QColor(180, 255, 220),
+	QColor(255, 220, 180)
+}};
 
 /*****************************************************************************/
 
@@ -48,13 +102,16 @@ Piece::Piece(Puzzle* puzzle)
 	setFlag(ItemIsMovable, true);
 	setHighlight(false);
 
-	for (int i = 0; i < 24; ++i) {
-		m_gradient.setColorAt(static_cast<float>(i) / 24.0f, Qt::black);
+	int style = Board::getCurStyle();
+	int slices = slices_styles[style];
+
+	for (int i = 0; i < slices; ++i) {
+		m_gradient.setColorAt(static_cast<float>(i) / slices, Qt::black);
 	}
 
 	m_rotate_timer = new QTimer(this);
 	connect(m_rotate_timer, &QTimer::timeout, this, &Piece::rotateConnectors);
-	m_rotate_timer->setInterval(40);
+	m_rotate_timer->setInterval(15);  // 40
 
 	m_puzzle->addItem(this);
 
@@ -69,22 +126,42 @@ Piece::Piece(Puzzle* puzzle)
 
 /*****************************************************************************/
 
+void Piece::redraw() {
+	int style = Board::getCurStyle();
+	int slices = slices_styles[style];
+
+	m_gradient = QConicalGradient(50, 50, 90);
+
+	for (int i = 0; i < slices; ++i) {
+		m_gradient.setColorAt(static_cast<float>(i) / slices, Qt::black);
+	}
+
+	int color = Board::getCurColor();
+
+	for (int offset = 0; offset < m_connectors.size(); ++offset)
+	{
+		int value = m_connectors[offset];
+
+		m_gradient.setColorAt(static_cast<float>(6 - offset) / 6.0f, connector_colors[color][value]);
+		if (offset == 0) {
+			m_gradient.setColorAt(0, connector_colors[color][value]);
+		}
+	}
+	setBrush(m_gradient);
+}
+
+/*****************************************************************************/
+
 bool Piece::setConnector(int offset, int value) {
 	if (m_colors.contains(value)) {
 		m_connectors[offset] = value;
 		m_colors.removeOne(value);
 
-		static QColor connector_colors[6] = {
-			QColor(255, 0, 0),
-			QColor(255, 255, 0),
-			QColor(0, 255, 0),
-			QColor(0, 255, 255),
-			QColor(0, 0, 255),
-			QColor(255, 0, 255)
-		};
-		m_gradient.setColorAt(static_cast<float>(6 - offset) / 6.0f, connector_colors[value]);
+		int color = Board::getCurColor();
+
+		m_gradient.setColorAt(static_cast<float>(6 - offset) / 6.0f, connector_colors[color][value]);
 		if (offset == 0) {
-			m_gradient.setColorAt(0, connector_colors[value]);
+			m_gradient.setColorAt(0, connector_colors[color][value]);
 		}
 		setBrush(m_gradient);
 
