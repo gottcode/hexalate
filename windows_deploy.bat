@@ -1,13 +1,15 @@
-@ECHO ON>windows\dirs.nsh
-@ECHO ON>windows\files.nsh
+@ECHO ON>..\hexalate\windows\dirs.nsh
+@ECHO ON>..\hexalate\windows\files.nsh
 @ECHO OFF
 
+SET SRCDIR=..\hexalate
 SET APP=Hexalate
 SET VERSION=1.1.6
 
 ECHO Copying executable
-MKDIR %APP%
-COPY release\%APP%.exe %APP% >nul
+MKDIR %SRCDIR%\%APP%
+COPY release\%APP%.exe %SRCDIR%\%APP% >nul
+CD %SRCDIR%
 
 ECHO Copying translations
 SET TRANSLATIONS=%APP%\translations
@@ -15,7 +17,7 @@ MKDIR %TRANSLATIONS%
 COPY translations\*.qm %TRANSLATIONS% >nul
 
 ECHO Copying Qt
-%QTDIR%\bin\windeployqt.exe --verbose 0 --no-angle --no-opengl-sw --no-svg %APP%\%APP%.exe
+%QTDIR%\bin\windeployqt.exe --verbose 0 --no-opengl-sw --no-system-d3d-compiler --no-svg %APP%\%APP%.exe
 RMDIR /S /Q %APP%\imageformats
 
 ECHO Creating ReadMe
