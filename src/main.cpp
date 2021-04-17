@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009-2020 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009-2021 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,6 +22,7 @@
 #include "locale_dialog.h"
 
 #include <QApplication>
+#include <QCommandLineParser>
 
 int main(int argc, char** argv) {
 #if (QT_VERSION < QT_VERSION_CHECK(6,0,0))
@@ -47,6 +48,12 @@ int main(int argc, char** argv) {
 #endif
 
 	LocaleDialog::loadTranslator("hexalate_");
+
+	QCommandLineParser parser;
+	parser.setApplicationDescription(Window::tr("A color matching game"));
+	parser.addHelpOption();
+	parser.addVersionOption();
+	parser.process(app);
 
 	Window window;
 	window.show();
