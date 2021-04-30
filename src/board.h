@@ -28,7 +28,7 @@ class Board : public QGraphicsView
 	Q_OBJECT
 
 public:
-	Board(QWidget* parent = 0);
+	Board(QWidget* parent = nullptr);
 
 public slots:
 	void newGame();

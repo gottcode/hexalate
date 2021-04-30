@@ -27,7 +27,7 @@ class Piece;
 class Puzzle : public QGraphicsScene
 {
 public:
-	Puzzle(QObject* parent = 0);
+	Puzzle(QObject* parent = nullptr);
 	~Puzzle();
 
 	void generate();

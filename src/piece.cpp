@@ -39,7 +39,7 @@ Piece::Piece(Puzzle* puzzle)
 	, m_puzzle(puzzle)
 	, m_gradient(50, 50, 90)
 	, m_rotations(0)
-	, m_swap_piece(0)
+	, m_swap_piece(nullptr)
 	, m_clicked(false)
 {
 	for (int i = 0; i < 6; ++i) {
@@ -170,7 +170,7 @@ void Piece::mouseMoveEvent(QGraphicsSceneMouseEvent* event)
 	}
 
 	// Find piece containing center
-	Piece* swap_piece = 0;
+	Piece* swap_piece = nullptr;
 	QList<QGraphicsItem*> items = scene()->items(sceneBoundingRect().center());
 	for (QGraphicsItem* item : items) {
 		Piece* piece = qgraphicsitem_cast<Piece*>(item);
@@ -192,7 +192,7 @@ void Piece::mouseMoveEvent(QGraphicsSceneMouseEvent* event)
 	} else {
 		if (m_swap_piece) {
 			m_swap_piece->setHighlight(false);
-			m_swap_piece = 0;
+			m_swap_piece = nullptr;
 		}
 	}
 
@@ -205,7 +205,7 @@ void Piece::mousePressEvent(QGraphicsSceneMouseEvent* event)
 {
 	if (event->button() == Qt::LeftButton) {
 		setZValue(3);
-		m_swap_piece = 0;
+		m_swap_piece = nullptr;
 	}
 	m_start_position = event->screenPos();
 	m_clicked = true;
@@ -222,7 +222,7 @@ void Piece::mouseReleaseEvent(QGraphicsSceneMouseEvent* event)
 		m_swap_piece->setHighlight(false);
 		m_swap_piece->setZValue(2);
 		m_swap_piece->moveTo(m_swap_piece->m_position);
-		m_swap_piece = 0;
+		m_swap_piece = nullptr;
 	} else if (m_clicked) {
 		rotate();
 		m_clicked = false;
