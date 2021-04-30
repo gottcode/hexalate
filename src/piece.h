@@ -17,8 +17,8 @@
  *
  ***********************************************************************/
 
-#ifndef PIECE_H
-#define PIECE_H
+#ifndef HEXALATE_PIECE_H
+#define HEXALATE_PIECE_H
 
 #include <QConicalGradient>
 #include <QList>
@@ -89,4 +89,4 @@ private:
 	bool m_clicked;
 };
 
-#endif
+#endif // HEXALATE_PIECE_H

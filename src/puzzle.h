@@ -17,8 +17,8 @@
  *
  ***********************************************************************/
 
-#ifndef PUZZLE_H
-#define PUZZLE_H
+#ifndef HEXALATE_PUZZLE_H
+#define HEXALATE_PUZZLE_H
 
 #include <QList>
 #include <QGraphicsScene>
@@ -52,4 +52,4 @@ private:
 	bool m_done;
 };
 
-#endif
+#endif // HEXALATE_PUZZLE_H

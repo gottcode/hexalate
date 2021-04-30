@@ -17,8 +17,8 @@
  *
  ***********************************************************************/
 
-#ifndef WINDOW_H
-#define WINDOW_H
+#ifndef HEXALATE_WINDOW_H
+#define HEXALATE_WINDOW_H
 
 #include <QMainWindow>
 
@@ -37,4 +37,4 @@ private slots:
 	void about();
 };
 
-#endif
+#endif // HEXALATE_WINDOW_H

@@ -17,8 +17,8 @@
  *
  ***********************************************************************/
 
-#ifndef BOARD_H
-#define BOARD_H
+#ifndef HEXALATE_BOARD_H
+#define HEXALATE_BOARD_H
 
 #include <QGraphicsView>
 class Puzzle;
@@ -40,4 +40,4 @@ private:
 	Puzzle* m_puzzle;
 };
 
-#endif
+#endif // HEXALATE_BOARD_H
