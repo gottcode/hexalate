@@ -58,15 +58,15 @@ public:
 		Type = UserType + 1
 	};
 
-	virtual int type() const
+	int type() const override
 	{
 		return Type;
 	}
 
 protected:
-	virtual void mouseMoveEvent(QGraphicsSceneMouseEvent* event);
-	virtual void mousePressEvent(QGraphicsSceneMouseEvent* event);
-	virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent* event);
+	void mouseMoveEvent(QGraphicsSceneMouseEvent* event) override;
+	void mousePressEvent(QGraphicsSceneMouseEvent* event) override;
+	void mouseReleaseEvent(QGraphicsSceneMouseEvent* event) override;
 
 private slots:
 	void rotateConnectors();

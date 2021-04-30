@@ -34,7 +34,7 @@ public slots:
 	void newGame();
 
 protected:
-	virtual void resizeEvent(QResizeEvent* event);
+	void resizeEvent(QResizeEvent* event) override;
 
 private:
 	Puzzle* m_puzzle;
