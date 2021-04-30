@@ -37,18 +37,18 @@ Window::Window()
 
 	// Create menus
 	QMenu* menu = menuBar()->addMenu(tr("&Game"));
-	menu->addAction(tr("&New"), board, SLOT(newGame()), QKeySequence::New);
+	menu->addAction(tr("&New"), board, &Board::newGame, QKeySequence::New);
 	menu->addSeparator();
-	QAction* action = menu->addAction(tr("&Quit"), qApp, SLOT(quit()), QKeySequence::Quit);
+	QAction* action = menu->addAction(tr("&Quit"), qApp, &QApplication::quit, QKeySequence::Quit);
 	action->setMenuRole(QAction::QuitRole);
 
 	menu = menuBar()->addMenu(tr("&Settings"));
-	menu->addAction(tr("Application &Language..."), this, SLOT(setLocale()));
+	menu->addAction(tr("Application &Language..."), this, &Window::setLocale);
 
 	menu = menuBar()->addMenu(tr("&Help"));
-	action = menu->addAction(tr("&About"), this, SLOT(about()));
+	action = menu->addAction(tr("&About"), this, &Window::about);
 	action->setMenuRole(QAction::AboutRole);
-	action = menu->addAction(tr("About &Qt"), qApp, SLOT(aboutQt()));
+	action = menu->addAction(tr("About &Qt"), qApp, &QApplication::aboutQt);
 	action->setMenuRole(QAction::AboutQtRole);
 
 	// Restore size and position
