@@ -24,7 +24,8 @@
 #include <QGraphicsScene>
 class Piece;
 
-class Puzzle : public QGraphicsScene {
+class Puzzle : public QGraphicsScene
+{
 public:
 	Puzzle(QObject* parent = 0);
 	~Puzzle();
@@ -33,7 +34,8 @@ public:
 
 	bool isDone();
 
-	Piece* piece(int offset) const {
+	Piece* piece(int offset) const
+	{
 		return m_pieces.at(offset);
 	}
 
@@ -45,6 +47,7 @@ private:
 	void createBackground();
 	void positionPieces();
 
+private:
 	QList<Piece*> m_pieces;
 	bool m_done;
 };

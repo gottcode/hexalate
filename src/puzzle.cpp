@@ -31,9 +31,10 @@
 #include <ctime>
 #include <random>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-static int match(int offset) {
+static int match(int offset)
+{
 	if (offset > 2) {
 		return offset - 3;
 	} else {
@@ -50,28 +51,31 @@ static QList<QPointF> positions = QList<QPointF>()
 	<< QPointF(23.4, 160)
 	<< QPointF(23.4, 60);
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
 Puzzle::Puzzle(QObject* parent)
-: QGraphicsScene(0, 0, 320, 320, parent),
-  m_done(false) {
+	: QGraphicsScene(0, 0, 320, 320, parent)
+	, m_done(false)
+{
 	if (!QSettings().contains("Current/Piece1") || !load()) {
 		generate();
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Puzzle::~Puzzle() {
+Puzzle::~Puzzle()
+{
 	QSettings().remove("Current");
 	if (!m_done) {
 		save();
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Puzzle::generate() {
+void Puzzle::generate()
+{
 	// Remove old game
 	clear();
 	m_pieces.clear();
@@ -140,9 +144,10 @@ void Puzzle::generate() {
 	positionPieces();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool Puzzle::isDone() {
+bool Puzzle::isDone()
+{
 	if (!m_done) {
 		// Check center
 		for (int i = 0; i < 6; ++i) {
@@ -185,9 +190,10 @@ bool Puzzle::isDone() {
 	return true;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Puzzle::swapPieces(Piece* piece1, Piece* piece2) {
+void Puzzle::swapPieces(Piece* piece1, Piece* piece2)
+{
 	int pos1 = m_pieces.indexOf(piece1);
 	int pos2 = m_pieces.indexOf(piece2);
 	Q_ASSERT(pos1 != -1 && pos2 != -1);
@@ -198,9 +204,10 @@ void Puzzle::swapPieces(Piece* piece1, Piece* piece2) {
 #endif
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool Puzzle::load() {
+bool Puzzle::load()
+{
 	// Add board background
 	createBackground();
 
@@ -223,18 +230,20 @@ bool Puzzle::load() {
 	return true;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Puzzle::save() {
+void Puzzle::save()
+{
 	QSettings settings;
 	for (int i = 0; i < 7; ++i) {
 		settings.setValue(QString("Current/Piece%1").arg(i+1), m_pieces[i]->toString());
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Puzzle::createBackground() {
+void Puzzle::createBackground()
+{
 	QGraphicsItem* background = addEllipse(10, 10, 300, 300, QPen(Qt::darkGray, 2), Qt::gray);
 	for (const QPointF& position : positions) {
 		QGraphicsItem* item = addEllipse(0, 0, 70, 70, Qt::NoPen, Qt::darkGray);
@@ -243,12 +252,13 @@ void Puzzle::createBackground() {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Puzzle::positionPieces() {
+void Puzzle::positionPieces()
+{
 	for (int i = 0; i < 7; ++i) {
 		m_pieces[i]->setPosition(positions[i]);
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------

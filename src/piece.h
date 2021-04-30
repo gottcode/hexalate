@@ -27,16 +27,20 @@
 class QTimer;
 class Puzzle;
 
-class Piece: public QObject, public QGraphicsEllipseItem {
+class Piece: public QObject, public QGraphicsEllipseItem
+{
 	Q_OBJECT
+
 public:
 	Piece(Puzzle* puzzle);
 
-	QList<int> colors() const {
+	QList<int> colors() const
+	{
 		return m_colors;
 	}
 
-	int connector(int offset) const {
+	int connector(int offset) const
+	{
 		return m_connectors.at(offset);
 	}
 
@@ -49,11 +53,13 @@ public:
 	QString toString() const;
 
 	// Enable qgraphicsitem_cast
-	enum {
+	enum
+	{
 		Type = UserType + 1
 	};
 
-	virtual int type() const {
+	virtual int type() const
+	{
 		return Type;
 	}
 
@@ -70,6 +76,7 @@ private:
 	void moveTo(const QPointF& new_pos);
 	void rotate();
 
+private:
 	Puzzle* m_puzzle;
 	QList<int> m_colors;
 	QList<int> m_connectors;

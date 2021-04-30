@@ -27,9 +27,10 @@
 #include <QMessageBox>
 #include <QSettings>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Window::Window() {
+Window::Window()
+{
 	// Create game board
 	Board* board = new Board(this);
 	setCentralWidget(board);
@@ -54,23 +55,26 @@ Window::Window() {
 	restoreGeometry(QSettings().value("Geometry").toByteArray());
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::closeEvent(QCloseEvent* event) {
+void Window::closeEvent(QCloseEvent* event)
+{
 	QSettings().setValue("Geometry", saveGeometry());
 	QMainWindow::closeEvent(event);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::setLocale() {
+void Window::setLocale()
+{
 	LocaleDialog dialog(this);
 	dialog.exec();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::about() {
+void Window::about()
+{
 	QMessageBox::about(this, tr("About Hexalate"), QString("<p align='center'><big><b>%1 %2</b></big><br/>%3<br/><small>%4<br/>%5</small></p>")
 		.arg(tr("Hexalate"), QCoreApplication::applicationVersion(),
 			tr("A color matching game"),
@@ -79,4 +83,4 @@ void Window::about() {
 	);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------

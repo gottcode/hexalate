@@ -23,10 +23,11 @@
 
 #include <QMessageBox>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
 Board::Board(QWidget* parent)
-: QGraphicsView(parent) {
+	: QGraphicsView(parent)
+{
 	setRenderHint(QPainter::Antialiasing, true);
 	setBackgroundBrush(Qt::lightGray);
 
@@ -39,20 +40,22 @@ Board::Board(QWidget* parent)
 	setScene(m_puzzle);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Board::newGame() {
+void Board::newGame()
+{
 	if (!m_puzzle->isDone() && QMessageBox::question(this, tr("Question"), tr("Abort current game?"), QMessageBox::Yes | QMessageBox::No, QMessageBox::No) == QMessageBox::No) {
 		return;
 	}
 	m_puzzle->generate();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Board::resizeEvent(QResizeEvent* event) {
+void Board::resizeEvent(QResizeEvent* event)
+{
 	fitInView(sceneRect(), Qt::KeepAspectRatio);
 	QGraphicsView::resizeEvent(event);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------

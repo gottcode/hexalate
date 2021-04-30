@@ -32,15 +32,16 @@
 #include <QTimeLine>
 #include <QTimer>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
 Piece::Piece(Puzzle* puzzle)
-: QGraphicsEllipseItem(0, 0, 100, 100),
-  m_puzzle(puzzle),
-  m_gradient(50, 50, 90),
-  m_rotations(0),
-  m_swap_piece(0),
-  m_clicked(false) {
+	: QGraphicsEllipseItem(0, 0, 100, 100)
+	, m_puzzle(puzzle)
+	, m_gradient(50, 50, 90)
+	, m_rotations(0)
+	, m_swap_piece(0)
+	, m_clicked(false)
+{
 	for (int i = 0; i < 6; ++i) {
 		m_colors.append(i);
 		m_connectors.append(-1);
@@ -67,9 +68,10 @@ Piece::Piece(Puzzle* puzzle)
 	overlay->setBrush(gradient);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool Piece::setConnector(int offset, int value) {
+bool Piece::setConnector(int offset, int value)
+{
 	if (m_colors.contains(value)) {
 		m_connectors[offset] = value;
 		m_colors.removeOne(value);
@@ -94,23 +96,26 @@ bool Piece::setConnector(int offset, int value) {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::setHighlight(bool highlight) {
+void Piece::setHighlight(bool highlight)
+{
 	setPen(QPen(highlight ? Qt::white : Qt::darkGray, 2));
 	setZValue(highlight ? 2 : 1);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::setPosition(const QPointF& position) {
+void Piece::setPosition(const QPointF& position)
+{
 	m_position = position;
 	setPos(m_position);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::spin(int rotations) {
+void Piece::spin(int rotations)
+{
 	int angle = 90;
 	for (int i = 0; i < rotations; ++i) {
 		m_connectors.move(5, 0);
@@ -123,9 +128,10 @@ void Piece::spin(int rotations) {
 	setBrush(m_gradient);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool Piece::fromString(const QString& string) {
+bool Piece::fromString(const QString& string)
+{
 #if (QT_VERSION >= QT_VERSION_CHECK(5,14,0))
 	const QStringList values = string.split(",", Qt::SkipEmptyParts);
 #else
@@ -143,9 +149,10 @@ bool Piece::fromString(const QString& string) {
 	return true;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-QString Piece::toString() const {
+QString Piece::toString() const
+{
 	QStringList values;
 	for (int i = 0; i < 6; ++i) {
 		values.append(QString::number(m_connectors[i]));
@@ -153,9 +160,10 @@ QString Piece::toString() const {
 	return values.join(",");
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::mouseMoveEvent(QGraphicsSceneMouseEvent* event) {
+void Piece::mouseMoveEvent(QGraphicsSceneMouseEvent* event)
+{
 	// Do not rotate because piece was dragged
 	if ((m_start_position - event->screenPos()).manhattanLength() >= QApplication::startDragDistance()) {
 		m_clicked = false;
@@ -191,9 +199,10 @@ void Piece::mouseMoveEvent(QGraphicsSceneMouseEvent* event) {
 	QGraphicsEllipseItem::mouseMoveEvent(event);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::mousePressEvent(QGraphicsSceneMouseEvent* event) {
+void Piece::mousePressEvent(QGraphicsSceneMouseEvent* event)
+{
 	if (event->button() == Qt::LeftButton) {
 		setZValue(3);
 		m_swap_piece = 0;
@@ -203,9 +212,10 @@ void Piece::mousePressEvent(QGraphicsSceneMouseEvent* event) {
 	QGraphicsEllipseItem::mousePressEvent(event);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::mouseReleaseEvent(QGraphicsSceneMouseEvent* event) {
+void Piece::mouseReleaseEvent(QGraphicsSceneMouseEvent* event)
+{
 	if (m_swap_piece) {
 		m_puzzle->swapPieces(this, m_swap_piece);
 		qSwap(m_position, m_swap_piece->m_position);
@@ -221,9 +231,10 @@ void Piece::mouseReleaseEvent(QGraphicsSceneMouseEvent* event) {
 	QGraphicsEllipseItem::mouseReleaseEvent(event);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::rotateConnectors() {
+void Piece::rotateConnectors()
+{
 	float angle = m_gradient.angle();
 	angle -= 20;
 	if (angle < 0) {
@@ -239,18 +250,20 @@ void Piece::rotateConnectors() {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::actionFinished() {
+void Piece::actionFinished()
+{
 	setZValue(1);
 	if (!m_puzzle->isDone()) {
 		setFlag(ItemIsMovable, true);
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::moveTo(const QPointF& new_pos) {
+void Piece::moveTo(const QPointF& new_pos)
+{
 	setFlag(ItemIsMovable, false);
 
 	QTimeLine* timeline = new QTimeLine(200, this);
@@ -267,9 +280,10 @@ void Piece::moveTo(const QPointF& new_pos) {
 	timeline->start();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Piece::rotate() {
+void Piece::rotate()
+{
 	m_connectors.move(5, 0);
 	m_rotations += 3;
 	if (!m_rotate_timer->isActive()) {
@@ -278,4 +292,4 @@ void Piece::rotate() {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------

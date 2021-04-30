@@ -23,8 +23,10 @@
 #include <QGraphicsView>
 class Puzzle;
 
-class Board : public QGraphicsView {
+class Board : public QGraphicsView
+{
 	Q_OBJECT
+
 public:
 	Board(QWidget* parent = 0);
 
