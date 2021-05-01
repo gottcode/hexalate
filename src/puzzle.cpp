@@ -40,7 +40,7 @@ static int match(int offset)
 	}
 }
 
-static QList<QPointF> positions = QList<QPointF>()
+static const QList<QPointF> positions = QList<QPointF>()
 	<< QPointF(110, 110)
 	<< QPointF(110, 10)
 	<< QPointF(196.6, 60)
