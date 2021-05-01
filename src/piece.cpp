@@ -171,7 +171,7 @@ void Piece::mouseMoveEvent(QGraphicsSceneMouseEvent* event)
 
 	// Find piece containing center
 	Piece* swap_piece = nullptr;
-	QList<QGraphicsItem*> items = scene()->items(sceneBoundingRect().center());
+	const QList<QGraphicsItem*> items = scene()->items(sceneBoundingRect().center());
 	for (QGraphicsItem* item : items) {
 		Piece* piece = qgraphicsitem_cast<Piece*>(item);
 		if (piece && piece != this) {
