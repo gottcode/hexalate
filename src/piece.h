@@ -32,7 +32,7 @@ class Piece: public QObject, public QGraphicsEllipseItem
 	Q_OBJECT
 
 public:
-	Piece(Puzzle* puzzle);
+	explicit Piece(Puzzle* puzzle);
 
 	QList<int> colors() const
 	{
