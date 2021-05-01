@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009-2021 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,6 +24,7 @@ class Piece;
 
 #include <QList>
 #include <QGraphicsScene>
+#include <QRandomGenerator>
 
 class Puzzle : public QGraphicsScene
 {
@@ -49,6 +50,7 @@ private:
 	void positionPieces();
 
 private:
+	QRandomGenerator m_random;
 	QList<Piece*> m_pieces;
 	bool m_done;
 };

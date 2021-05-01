@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2014, 2015 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009-2021 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,8 +28,6 @@
 #include <QSettings>
 
 #include <algorithm>
-#include <ctime>
-#include <random>
 
 //-----------------------------------------------------------------------------
 
@@ -55,6 +53,7 @@ static QList<QPointF> positions = QList<QPointF>()
 
 Puzzle::Puzzle(QObject* parent)
 	: QGraphicsScene(0, 0, 320, 320, parent)
+	, m_random(QRandomGenerator::securelySeeded())
 	, m_done(false)
 {
 	if (!QSettings().contains("Current/Piece1") || !load()) {
@@ -81,14 +80,6 @@ void Puzzle::generate()
 	m_pieces.clear();
 	m_done = false;
 
-	// Set random seed
-#ifndef Q_OS_WIN
-	std::random_device rd;
-	std::mt19937 gen(rd());
-#else
-	std::mt19937 gen(time(0));
-#endif
-
 	// Add board background
 	createBackground();
 
@@ -99,7 +90,7 @@ void Puzzle::generate()
 
 	// Create first piece
 	QList<int> colors = m_pieces.first()->colors();
-	std::shuffle(colors.begin(), colors.end(), gen);
+	std::shuffle(colors.begin(), colors.end(), m_random);
 	for (int i = 0; i < 6; ++i) {
 		int color = colors.at(i);
 		m_pieces.first()->setConnector(i, color);
@@ -115,8 +106,7 @@ void Puzzle::generate()
 		QList<int> colors2 = m_pieces.at(next)->colors();
 		colors = colors1 + colors2;
 		colors.erase(std::set_intersection(colors1.begin(), colors1.end(), colors2.begin(), colors2.end(), colors.begin()), colors.end());
-		std::uniform_int_distribution<int> dis(0, colors.count() - 1);
-		int color = colors.at(dis(gen));
+		int color = colors.at(m_random.bounded(colors.count()));
 		m_pieces.at(i)->setConnector(offset, color);
 		m_pieces.at(next)->setConnector(match(offset), color);
 	}
@@ -125,7 +115,7 @@ void Puzzle::generate()
 	for (int i = 1; i < 7; ++i) {
 		Piece* piece = m_pieces.at(i);
 		colors = piece->colors();
-		std::shuffle(colors.begin(), colors.end(), gen);
+		std::shuffle(colors.begin(), colors.end(), m_random);
 		for (int j = 0; j < 6; ++j) {
 			if (piece->connector(j) == -1) {
 				piece->setConnector(j, colors.takeFirst());
@@ -134,10 +124,9 @@ void Puzzle::generate()
 	}
 
 	// Randomize board
-	std::shuffle(m_pieces.begin(), m_pieces.end(), gen);
-	std::uniform_int_distribution<int> dis(0, 5);
+	std::shuffle(m_pieces.begin(), m_pieces.end(), m_random);
 	for (Piece* piece : m_pieces) {
-		piece->spin(dis(gen));
+		piece->spin(m_random.bounded(6));
 	}
 
 	// Position pieces
