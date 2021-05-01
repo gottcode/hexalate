@@ -20,9 +20,10 @@
 #ifndef HEXALATE_PUZZLE_H
 #define HEXALATE_PUZZLE_H
 
+class Piece;
+
 #include <QList>
 #include <QGraphicsScene>
-class Piece;
 
 class Puzzle : public QGraphicsScene
 {

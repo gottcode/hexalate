@@ -20,8 +20,9 @@
 #ifndef HEXALATE_BOARD_H
 #define HEXALATE_BOARD_H
 
-#include <QGraphicsView>
 class Puzzle;
+
+#include <QGraphicsView>
 
 class Board : public QGraphicsView
 {

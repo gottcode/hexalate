@@ -20,12 +20,13 @@
 #ifndef HEXALATE_PIECE_H
 #define HEXALATE_PIECE_H
 
+class Puzzle;
+
 #include <QConicalGradient>
 #include <QList>
 #include <QGraphicsEllipseItem>
 #include <QObject>
 class QTimer;
-class Puzzle;
 
 class Piece: public QObject, public QGraphicsEllipseItem
 {
