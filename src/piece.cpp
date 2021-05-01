@@ -1,5 +1,5 @@
 /*
-	SPDX-FileCopyrightText: 2009-2014 Graeme Gott <graeme@gottcode.org>
+	SPDX-FileCopyrightText: 2009-2021 Graeme Gott <graeme@gottcode.org>
 
 	SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -169,18 +169,13 @@ void Piece::mouseMoveEvent(QGraphicsSceneMouseEvent* event)
 	}
 
 	// Highlight swap piece
-	if (swap_piece) {
-		if (swap_piece != m_swap_piece) {
-			if (m_swap_piece) {
-				m_swap_piece->setHighlight(false);
-			}
-			m_swap_piece = swap_piece;
-			m_swap_piece->setHighlight(true);
-		}
-	} else {
+	if (swap_piece != m_swap_piece) {
 		if (m_swap_piece) {
 			m_swap_piece->setHighlight(false);
-			m_swap_piece = nullptr;
+		}
+		m_swap_piece = swap_piece;
+		if (m_swap_piece) {
+			m_swap_piece->setHighlight(true);
 		}
 	}
 
