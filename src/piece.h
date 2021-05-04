@@ -75,7 +75,7 @@ private:
 	Piece* m_swap_piece;
 	QPoint m_start_position;
 	bool m_clicked;
-	bool m_clicked_right;
+	bool m_rotate_clockwise;
 };
 
 #endif // HEXALATE_PIECE_H
