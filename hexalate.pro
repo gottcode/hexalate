@@ -74,9 +74,6 @@ macx {
 	icon.files = icons/hicolor/*
 	icon.path = $$PREFIX/share/icons/hicolor
 
-	pixmap.files = icons/hexalate.xpm
-	pixmap.path = $$PREFIX/share/pixmaps
-
 	desktop.files = icons/hexalate.desktop
 	desktop.path = $$PREFIX/share/applications
 
@@ -90,5 +87,5 @@ macx {
 	man.files = doc/hexalate.6
 	man.path = $$PREFIX/share/man/man6
 
-	INSTALLS += target icon pixmap desktop appdata qm man
+	INSTALLS += target icon desktop appdata qm man
 }
