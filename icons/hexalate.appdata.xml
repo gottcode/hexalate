@@ -34,6 +34,7 @@
   <summary xml:lang="pt_BR">Rode os círculos para combinar as cores.</summary>
   <summary xml:lang="ro">Rotiţi cercurile pentru potrivirea culorilor</summary>
   <summary xml:lang="ru">Вращайте круги, чтобы сопоставить цвета</summary>
+  <summary xml:lang="tr">Renkleri eşleştirmek için daireleri döndürün</summary>
   <summary xml:lang="zh">旋转圆盘以搭配颜色</summary>
 
   <description>
@@ -50,6 +51,7 @@
     <p xml:lang="pt_BR">Hexalate é um jogo de combinação de cores. O objetivo do jogo é rodar e posicionar os círculos para que cada linha seja combinada com as mesmas cores. Você roda os círculos apertando o botão direito do mouse, e move os círculos arrastando-os. O jogo guarda as posições e rotações dos círculos através das rodadas.</p>
     <p xml:lang="ro">Hexalate este un joc de potrivire a culorilor. Scopul jocului este de a roti şi poziţiona cercurile astfel încît fiecare linie care se atinge să se potrivească la culoare. Rotiţi cercurile cu clic dreapta, şi mutaţi cercurile prin glisarea acestora. Jocul stochează poziţiile şi rotaţiile cercurilor din întreaga rulare.</p>
     <p xml:lang="ru">Hexalate - игра сопоставления цветов. Цель игры состоит в том, чтобы вращать и перемещать круги так, что бы каждый цветной луч касался другого луча такого же цвета. Круги можно вращать и перемещать правой кнопкой мыши. Игра сохраняет позиции кругов и можно продолжить играть при следующем запуске.</p>
+    <p xml:lang="tr">Hexalate bir renk eşleştirme oyunudur. Oyunun amacı, çemberleri döndürmek ve her dokunma çizgisi renkle eşleşecek şekilde konumlandırmaktır. Daireleri sağ tıklatarak döndürürsünüz ve çemberleri sürükleyerek taşırsınız. Oyun, turlar boyunca dairelerin konumlarını ve dönüşümlerini kaydeder.</p>
     <p xml:lang="zh">Hexalate 是一款颜色搭配游戏。游戏的目标是通过旋转和移动圆盘，使每一对接触的谱线颜色一致。单击以旋转圆盘，拖拽以移动圆盘。本游戏会保存上次退出时的圆盘位置和旋转情况。</p>
   </description>
 
@@ -78,7 +80,7 @@
     <kudo>ModernToolkit</kudo>
   </kudos>
 
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
 
   <releases>
     <release version="1.1.6" date="2020-04-20">

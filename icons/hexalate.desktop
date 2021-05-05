@@ -46,6 +46,7 @@ Comment[pt]=Rode os círculos para corresponder as cores
 Comment[pt_BR]=Rode os círculos para combinar as cores.
 Comment[ro]=Rotiţi cercurile pentru potrivirea culorilor
 Comment[ru]=Вращайте круги, чтобы сопоставить цвета
+Comment[tr]=Renkleri eşleştirmek için daireleri döndürün
 Comment[zh]=旋转圆盘以搭配颜色
 Exec=hexalate
 Icon=hexalate

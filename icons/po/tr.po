@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# abc Def <hdogan1974@gmail.com>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2018-05-28 15:44+0000\n"
-"Last-Translator: Graeme Gott <graeme@gottcode.org>\n"
+"PO-Revision-Date: 2020-05-04 02:40+0000\n"
+"Last-Translator: abc Def <hdogan1974@gmail.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/gottcode/hexalate/"
 "language/tr_TR/)\n"
 "Language: tr\n"
@@ -24,7 +25,7 @@ msgstr "Hexalate"
 
 #: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
 msgid "Spin circles to match colors"
-msgstr ""
+msgstr "Renkleri eşleştirmek için daireleri döndürün"
 
 #: ../hexalate.appdata.xml.in:10
 msgid ""
@@ -33,6 +34,10 @@ msgid ""
 "circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
 msgstr ""
+"Hexalate bir renk eşleştirme oyunudur. Oyunun amacı, çemberleri döndürmek ve "
+"her dokunma çizgisi renkle eşleşecek şekilde konumlandırmaktır. Daireleri "
+"sağ tıklatarak döndürürsünüz ve çemberleri sürükleyerek taşırsınız. Oyun, "
+"turlar boyunca dairelerin konumlarını ve dönüşümlerini kaydeder."
 
 #: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
