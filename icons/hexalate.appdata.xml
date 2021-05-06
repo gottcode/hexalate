@@ -83,6 +83,16 @@
   <content_rating type="oars-1.1"/>
 
   <releases>
+    <release version="1.2.0" date="2021-05-06">
+      <description>
+        <ul>
+          <li>Added rotating pieces counterclockwise</li>
+          <li>Added support for Qt 6</li>
+          <li>Refactored code</li>
+          <li>Removed XPM icon</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.6" date="2020-04-20">
       <description>
         <ul>

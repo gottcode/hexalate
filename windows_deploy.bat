@@ -4,7 +4,7 @@
 
 SET SRCDIR=..\hexalate
 SET APP=Hexalate
-SET VERSION=1.1.6
+SET VERSION=1.2.0
 
 ECHO Copying executable
 MKDIR %SRCDIR%\%APP%

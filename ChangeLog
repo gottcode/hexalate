@@ -1,3 +1,10 @@
+1.2.0
+-----
+* Added rotating pieces counterclockwise.
+* Added support for Qt 6.
+* Refactored code.
+* Removed XPM icon.
+
 1.1.6
 -----
 * FIXED: Did not load locales with underscores.
