@@ -120,11 +120,7 @@ void Piece::spin(int rotations)
 
 bool Piece::fromString(const QString& string)
 {
-#if (QT_VERSION >= QT_VERSION_CHECK(5,14,0))
 	const QStringList values = string.split(",", Qt::SkipEmptyParts);
-#else
-	const QStringList values = string.split(",", QString::SkipEmptyParts);
-#endif
 	if (values.count() != 6) {
 		return false;
 	}

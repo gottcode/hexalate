@@ -173,11 +173,7 @@ void Puzzle::swapPieces(Piece* piece1, Piece* piece2)
 	int pos1 = m_pieces.indexOf(piece1);
 	int pos2 = m_pieces.indexOf(piece2);
 	Q_ASSERT(pos1 != -1 && pos2 != -1);
-#if (QT_VERSION >= QT_VERSION_CHECK(5,13,0))
 	m_pieces.swapItemsAt(pos1, pos2);
-#else
-	m_pieces.swap(pos1, pos2);
-#endif
 }
 
 //-----------------------------------------------------------------------------
