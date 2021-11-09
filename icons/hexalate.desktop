@@ -48,6 +48,7 @@ Comment[ro]=Rotiţi cercurile pentru potrivirea culorilor
 Comment[ru]=Вращайте круги, чтобы сопоставить цвета
 Comment[tr]=Renkleri eşleştirmek için daireleri döndürün
 Comment[zh]=旋转圆盘以搭配颜色
+TryExec=hexalate
 Exec=hexalate
 Icon=hexalate
 Terminal=false
