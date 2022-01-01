@@ -1,5 +1,5 @@
 /*
-	SPDX-FileCopyrightText: 2009-2021 Graeme Gott <graeme@gottcode.org>
+	SPDX-FileCopyrightText: 2009-2022 Graeme Gott <graeme@gottcode.org>
 
 	SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -65,7 +65,7 @@ void Window::about()
 	QMessageBox::about(this, tr("About Hexalate"), QString("<p align='center'><big><b>%1 %2</b></big><br/>%3<br/><small>%4<br/>%5</small></p>")
 		.arg(tr("Hexalate"), QCoreApplication::applicationVersion(),
 			tr("A color matching game"),
-			tr("Copyright &copy; 2009-%1 Graeme Gott").arg("2021"),
+			tr("Copyright &copy; 2009-%1 Graeme Gott").arg("2022"),
 			tr("Released under the <a href=%1>GPL 3</a> license").arg("\"http://www.gnu.org/licenses/gpl.html\""))
 	);
 }
