@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# albanobattistella <albano_battistella@hotmail.com>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
 "PO-Revision-Date: 2014-11-13 21:49+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: albanobattistella <albano_battistella@hotmail.com>, 2021\n"
 "Language-Team: Italian (http://www.transifex.com/gottcode/hexalate/language/"
 "it/)\n"
 "Language: it\n"
@@ -20,11 +21,11 @@ msgstr ""
 
 #: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
 msgid "Hexalate"
-msgstr ""
+msgstr "Hexalate"
 
 #: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
 msgid "Spin circles to match colors"
-msgstr ""
+msgstr "Gira i cerchi per abbinare i colori"
 
 #: ../hexalate.appdata.xml.in:10
 msgid ""
@@ -33,7 +34,12 @@ msgid ""
 "circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
 msgstr ""
+"Hexalate è un gioco di abbinamento dei colori. L'obiettivo del gioco è "
+"ruotare e posizionare i cerchi in modo che ogni linea che si tocca "
+"corrisponda a colori. Ruota i cerchi facendo clic con il pulsante destro del "
+"mouse e sposta i cerchi trascinandoli. Il gioco memorizza le posizioni e le "
+"rotazioni dei cerchi."
 
 #: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
-msgstr ""
+msgstr "Gioco di abbinamento dei colori"

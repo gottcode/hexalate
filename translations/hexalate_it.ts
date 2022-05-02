@@ -20,7 +20,7 @@
     </message>
     <message>
         <source>&lt;System Language&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;System Language&gt;</translation>
     </message>
     <message>
         <source>Note</source>
@@ -86,19 +86,19 @@
     </message>
     <message>
         <source>About Hexalate</source>
-        <translation type="unfinished"></translation>
+        <translation>Informazioni su Hexalate</translation>
     </message>
     <message>
         <source>A color matching game</source>
-        <translation type="unfinished"></translation>
+        <translation>Un gioco di abbinamento dei colori</translation>
     </message>
     <message>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation type="unfinished"></translation>
+        <translation>Rilasciato sotto licenza &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
 </context>
 </TS>

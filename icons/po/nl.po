@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Heimen Stoffels <vistausss@outlook.com>, 2018
+# Heimen Stoffels <vistausss@fastmail.com>, 2021
+# Heimen Stoffels <vistausss@fastmail.com>, 2018
 # RobertBorst <webmaster@fam-borst.nl>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:49+0000\n"
-"PO-Revision-Date: 2018-04-17 09:21+0000\n"
-"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"PO-Revision-Date: 2014-11-13 21:49+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>, 2021\n"
 "Language-Team: Dutch (http://www.transifex.com/gottcode/hexalate/language/"
 "nl/)\n"
 "Language: nl\n"
@@ -35,11 +36,11 @@ msgid ""
 "circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
 msgstr ""
-"Hexalate is een kleurkoppelspel. Het doel is om de cirkels zo te draaien en "
-"te positioneren dat elke koppellijn dezelfde kleur heeft. Cirkels kun je "
+"Hexalate is een kleurkoppelspel. Het doel is om de cirkels zó te draaien en "
+"positioneren dat elke koppellijn dezelfde kleur heeft. Cirkels kun je "
 "draaien door te klikken met de rechtermuisknop en verplaatsen door ze te "
-"verslepen. Het spel slaat de positie en de rotaties van de cirkels tijdens "
-"het spel op."
+"verslepen. Het spel slaat de positie en rotaties van de cirkels tijdens het "
+"spel op."
 
 #: ../hexalate.desktop.in:4
 msgid "Color Matching Game"
