@@ -80,6 +80,7 @@
   <provides>
     <binary>hexalate</binary>
   </provides>
+  <launchable type="desktop-id">hexalate.desktop</launchable>
 
   <kudos>
     <kudo>HiDpiIcon</kudo>
