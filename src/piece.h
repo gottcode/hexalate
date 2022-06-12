@@ -56,7 +56,7 @@ protected:
 	void mousePressEvent(QGraphicsSceneMouseEvent* event) override;
 	void mouseReleaseEvent(QGraphicsSceneMouseEvent* event) override;
 
-private slots:
+private Q_SLOTS:
 	void rotateConnectors();
 	void actionFinished();
 
