@@ -76,6 +76,8 @@ endif()
 
 # Install
 if(UNIX AND NOT APPLE)
+	target_compile_definitions(hexalate PRIVATE DATADIR="${CMAKE_INSTALL_FULL_DATADIR}/hexalate")
+
 	target_sources(hexalate PRIVATE icons/icon.qrc)
 
 	install(TARGETS hexalate RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
