@@ -4,12 +4,13 @@
 	SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-#include "window.h"
-
 #include "locale_dialog.h"
+#include "window.h"
 
 #include <QApplication>
 #include <QCommandLineParser>
+#include <QFileInfo>
+#include <QSettings>
 
 int main(int argc, char** argv)
 {
@@ -24,6 +25,7 @@ int main(int argc, char** argv)
 	app.setDesktopFileName("hexalate");
 #endif
 
+	// Find application data
 	const QString appdir = app.applicationDirPath();
 	const QStringList datadirs{
 #if defined(Q_OS_MAC)
@@ -36,14 +38,28 @@ int main(int argc, char** argv)
 #endif
 	};
 
+	// Handle portability
+#ifdef Q_OS_MAC
+	const QFileInfo portable(appdir + "/../../../Data");
+#else
+	const QFileInfo portable(appdir + "/Data");
+#endif
+	if (portable.exists() && portable.isWritable()) {
+		QSettings::setDefaultFormat(QSettings::IniFormat);
+		QSettings::setPath(QSettings::IniFormat, QSettings::UserScope, portable.absoluteFilePath() + "/Settings");
+	}
+
+	// Load application language
 	LocaleDialog::loadTranslator("hexalate_", datadirs);
 
+	// Handle commandline
 	QCommandLineParser parser;
 	parser.setApplicationDescription(Window::tr("A color matching game"));
 	parser.addHelpOption();
 	parser.addVersionOption();
 	parser.process(app);
 
+	// Create main window
 	Window window;
 	window.show();
 
