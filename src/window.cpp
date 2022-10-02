@@ -24,9 +24,11 @@ Window::Window()
 
 	// Create menus
 	QMenu* menu = menuBar()->addMenu(tr("&Game"));
-	menu->addAction(tr("&New"), board, &Board::newGame, QKeySequence::New);
+	QAction* action = menu->addAction(tr("&New"), board, &Board::newGame);
+	action->setShortcut(QKeySequence::New);
 	menu->addSeparator();
-	QAction* action = menu->addAction(tr("&Quit"), qApp, &QApplication::quit, QKeySequence::Quit);
+	action = menu->addAction(tr("&Quit"), qApp, &QApplication::quit);
+	action->setShortcut(QKeySequence::Quit);
 	action->setMenuRole(QAction::QuitRole);
 
 	menu = menuBar()->addMenu(tr("&Settings"));
