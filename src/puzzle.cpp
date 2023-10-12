@@ -112,7 +112,7 @@ void Puzzle::generate()
 
 	// Randomize board
 	std::shuffle(m_pieces.begin(), m_pieces.end(), m_random);
-	for (Piece* piece : qAsConst(m_pieces)) {
+	for (Piece* piece : std::as_const(m_pieces)) {
 		piece->spin(m_random.bounded(6));
 	}
 
