@@ -31,12 +31,20 @@ add_version_compile_definition(src/main.cpp VERSIONSTR)
 
 # Create program
 qt_add_executable(hexalate
+	# Headers
+	src/board.h
+	src/locale_dialog.h
+	src/piece.h
+	src/puzzle.h
+	src/window.h
+	# Sources
 	src/board.cpp
 	src/locale_dialog.cpp
 	src/main.cpp
 	src/piece.cpp
 	src/puzzle.cpp
 	src/window.cpp
+	# Resources
 	${translations_QM}
 )
 
