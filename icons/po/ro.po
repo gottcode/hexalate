@@ -1,46 +1,39 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Graeme Gott
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Oprea Nicolae <jaff2002@yahoo.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:49+0000\n"
+"POT-Creation-Date: 2014-11-13 21:49+0000\n"
 "PO-Revision-Date: 2017-09-23 20:29+0000\n"
 "Last-Translator: Oprea Nicolae <jaff2002@yahoo.com>\n"
-"Language-Team: Romanian (http://www.transifex.com/gottcode/hexalate/language/"
-"ro/)\n"
-"Language: ro\n"
+"Language-Team: Romanian (http://www.transifex.com/gottcode/hexalate/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
-"2:1));\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
-#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
-msgid "Hexalate"
-msgstr "Hexalate"
-
-#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
+#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:3
 msgid "Spin circles to match colors"
 msgstr "Rotiţi cercurile pentru potrivirea culorilor"
 
-#: ../hexalate.appdata.xml.in:10
+#: ../hexalate.appdata.xml.in.h:2
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
-"position the circles so that each touching line matches in color. You rotate "
-"circles by right clicking, and you move circles by dragging them. The game "
+"position the circles so that each touching line matches in color. You rotate"
+" circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
-msgstr ""
-"Hexalate este un joc de potrivire a culorilor. Scopul jocului este de a roti "
-"şi poziţiona cercurile astfel încît fiecare linie care se atinge să se "
-"potrivească la culoare. Rotiţi cercurile cu clic dreapta, şi mutaţi "
-"cercurile prin glisarea acestora. Jocul stochează poziţiile şi rotaţiile "
-"cercurilor din întreaga rulare."
+msgstr "Hexalate este un joc de potrivire a culorilor. Scopul jocului este de a roti şi poziţiona cercurile astfel încît fiecare linie care se atinge să se potrivească la culoare. Rotiţi cercurile cu clic dreapta, şi mutaţi cercurile prin glisarea acestora. Jocul stochează poziţiile şi rotaţiile cercurilor din întreaga rulare."
 
-#: ../hexalate.desktop.in:4
+#: ../hexalate.desktop.in.h:1
+msgid "Hexalate"
+msgstr "Hexalate"
+
+#: ../hexalate.desktop.in.h:2
 msgid "Color Matching Game"
 msgstr "Joc de potrivire a culorilor"

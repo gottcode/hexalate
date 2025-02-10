@@ -1,43 +1,39 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Graeme Gott
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # 高垚鑫, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:49+0000\n"
+"POT-Creation-Date: 2014-11-13 21:49+0000\n"
 "PO-Revision-Date: 2018-03-24 12:46+0000\n"
 "Last-Translator: 高垚鑫\n"
-"Language-Team: Chinese (http://www.transifex.com/gottcode/hexalate/language/"
-"zh/)\n"
-"Language: zh\n"
+"Language-Team: Chinese (http://www.transifex.com/gottcode/hexalate/language/zh/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
-msgid "Hexalate"
-msgstr "Hexalate"
-
-#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
+#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:3
 msgid "Spin circles to match colors"
 msgstr "旋转圆盘以搭配颜色"
 
-#: ../hexalate.appdata.xml.in:10
+#: ../hexalate.appdata.xml.in.h:2
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
-"position the circles so that each touching line matches in color. You rotate "
-"circles by right clicking, and you move circles by dragging them. The game "
+"position the circles so that each touching line matches in color. You rotate"
+" circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
-msgstr ""
-"Hexalate 是一款颜色搭配游戏。游戏的目标是通过旋转和移动圆盘，使每一对接触的谱"
-"线颜色一致。单击以旋转圆盘，拖拽以移动圆盘。本游戏会保存上次退出时的圆盘位置"
-"和旋转情况。"
+msgstr "Hexalate 是一款颜色搭配游戏。游戏的目标是通过旋转和移动圆盘，使每一对接触的谱线颜色一致。单击以旋转圆盘，拖拽以移动圆盘。本游戏会保存上次退出时的圆盘位置和旋转情况。"
 
-#: ../hexalate.desktop.in:4
+#: ../hexalate.desktop.in.h:1
+msgid "Hexalate"
+msgstr "Hexalate"
+
+#: ../hexalate.desktop.in.h:2
 msgid "Color Matching Game"
 msgstr "颜色搭配游戏"

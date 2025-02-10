@@ -1,43 +1,39 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Graeme Gott
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Nanowarrior, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Hexalate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:49+0000\n"
+"POT-Creation-Date: 2014-11-13 21:49+0000\n"
 "PO-Revision-Date: 2014-11-13 21:49+0000\n"
 "Last-Translator: Nanowarrior, 2021\n"
-"Language-Team: Telugu (http://www.transifex.com/gottcode/hexalate/language/"
-"te/)\n"
-"Language: te\n"
+"Language-Team: Telugu (http://www.transifex.com/gottcode/hexalate/language/te/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: te\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../hexalate.appdata.xml.in:6 ../hexalate.desktop.in:3
-msgid "Hexalate"
-msgstr "హెక్సలేట్"
-
-#: ../hexalate.appdata.xml.in:7 ../hexalate.desktop.in:5
+#: ../hexalate.appdata.xml.in.h:1 ../hexalate.desktop.in.h:3
 msgid "Spin circles to match colors"
 msgstr "రంగులను సరిపోల్చడానికి సర్కిల్‌లను స్పిన్ చేయండి"
 
-#: ../hexalate.appdata.xml.in:10
+#: ../hexalate.appdata.xml.in.h:2
 msgid ""
 "Hexalate is a color matching game. The goal of the game is to rotate and "
-"position the circles so that each touching line matches in color. You rotate "
-"circles by right clicking, and you move circles by dragging them. The game "
+"position the circles so that each touching line matches in color. You rotate"
+" circles by right clicking, and you move circles by dragging them. The game "
 "stores the positions and rotations of the circles across runs."
-msgstr ""
-"హెక్సలేట్ రంగు సరిపోయే ఆట. ప్రతి హత్తుకునే పంక్తి రంగులో సరిపోయే విధంగా సర్కిల్‌లను తిప్పడం మరియు "
-"ఉంచడం ఆట యొక్క లక్ష్యం. మీరు కుడి క్లిక్ చేయడం ద్వారా సర్కిల్‌లను కదలిస్తారు మరియు మీరు వాటిని లాగడం "
-"ద్వారా సర్కిల్‌లను కదిలిస్తారు. ఆట సర్కిల్‌ల స్థానాలు మరియు భ్రమణాలను పరుగుల్లో నిల్వ చేస్తుంది."
+msgstr "హెక్సలేట్ రంగు సరిపోయే ఆట. ప్రతి హత్తుకునే పంక్తి రంగులో సరిపోయే విధంగా సర్కిల్‌లను తిప్పడం మరియు ఉంచడం ఆట యొక్క లక్ష్యం. మీరు కుడి క్లిక్ చేయడం ద్వారా సర్కిల్‌లను కదలిస్తారు మరియు మీరు వాటిని లాగడం ద్వారా సర్కిల్‌లను కదిలిస్తారు. ఆట సర్కిల్‌ల స్థానాలు మరియు భ్రమణాలను పరుగుల్లో నిల్వ చేస్తుంది."
 
-#: ../hexalate.desktop.in:4
+#: ../hexalate.desktop.in.h:1
+msgid "Hexalate"
+msgstr "హెక్సలేట్"
+
+#: ../hexalate.desktop.in.h:2
 msgid "Color Matching Game"
 msgstr "రంగు సరిపోల్చే ఆట"

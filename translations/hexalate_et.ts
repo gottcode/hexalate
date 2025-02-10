@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>Abort current game?</source>
-        <translation>Katkestada praegune mäng?</translation>
+        <translation>Kas katkestame praeguse mängu?</translation>
     </message>
 </context>
 <context>
@@ -28,7 +28,7 @@
     </message>
     <message>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>Keele muudatuse mõjumiseks taaskäivita palun see programm.</translation>
+        <translation>Keele muudatuse mõjumiseks taaskäivita palun see rakendus.</translation>
     </message>
 </context>
 <context>
@@ -43,7 +43,7 @@
     </message>
     <message>
         <source>Unable to load previous game. Starting a new game.</source>
-        <translation>Eelmise mängu laadimine ebaõnnestus. Uue mängu alustamine.</translation>
+        <translation>Eelmise mängu laadimine ei õnnestunud. Alustame uut mängu.</translation>
     </message>
 </context>
 <context>
@@ -54,19 +54,19 @@
     </message>
     <message>
         <source>&amp;Game</source>
-        <translation>Mäng</translation>
+        <translation>Män&amp;g</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>Uus</translation>
+        <translation>&amp;Uus</translation>
     </message>
     <message>
         <source>&amp;Quit</source>
-        <translation>Lõpeta</translation>
+        <translation>&amp;Välju</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation>&amp;Seaded</translation>
+        <translation>&amp;Seadistused</translation>
     </message>
     <message>
         <source>Application &amp;Language...</source>
@@ -74,19 +74,19 @@
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation>Abiinfo</translation>
+        <translation>&amp;Abiteave</translation>
     </message>
     <message>
         <source>&amp;About</source>
-        <translation>Rakendusest</translation>
+        <translation>R&amp;akenduse teave</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation>&amp;Qt info</translation>
+        <translation>&amp;Qt teave</translation>
     </message>
     <message>
         <source>About Hexalate</source>
-        <translation>Hexalate info</translation>
+        <translation>Hexalate&apos;i teave</translation>
     </message>
     <message>
         <source>A color matching game</source>
@@ -98,7 +98,7 @@
     </message>
     <message>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation>Antud välja &lt;a href=%1&gt;GPL 3&lt;/a&gt; litsentsi alusel</translation>
+        <translation>Avaldatud &lt;a href=%1&gt;GPL 3&lt;/a&gt; litsentsi alusel</translation>
     </message>
 </context>
 </TS>
