@@ -32,12 +32,6 @@
     <binary>hexalate</binary>
   </provides>
   <launchable type="desktop-id">hexalate.desktop</launchable>
-  <icon type="stock">hexalate</icon>
-
-  <categories>
-    <category>Game</category>
-    <category>LogicGame</category>
-  </categories>
 
   <kudos>
     <kudo>HiDpiIcon</kudo>
