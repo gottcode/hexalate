@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 # Configure project
-project(hexalate VERSION 1.2.5 LANGUAGES CXX)
+project(hexalate VERSION 1.2.6 LANGUAGES CXX)
 
 set(project_copyright "2009-2026 Graeme Gott")
 

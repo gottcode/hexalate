@@ -1,3 +1,8 @@
+1.2.6
+-----
+* Replaced shadowed variable names.
+* Updated link to translations.
+
 1.2.5
 -----
 * Improved code for building translations.
