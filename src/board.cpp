@@ -15,6 +15,7 @@
 Board::Board(QWidget* parent)
 	: QGraphicsView(parent)
 {
+	setCacheMode(QGraphicsView::CacheBackground);
 	setRenderHint(QPainter::Antialiasing, true);
 	setBackgroundBrush(Qt::lightGray);
 
