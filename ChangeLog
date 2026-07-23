@@ -1,3 +1,9 @@
+1.2.7
+-----
+* FIXED: Rendering artifacts with fractional scaling.
+* Document policy prohibiting the use of AI.
+* Use strict mode to disable unsafe Qt APIs.
+
 1.2.6
 -----
 * Replaced shadowed variable names.
