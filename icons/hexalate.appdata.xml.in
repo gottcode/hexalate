@@ -20,6 +20,7 @@
   <url type="bugtracker">https://gottcode.org/hexalate/bugs/</url>
   <url type="donation">https://gottcode.org/tip/</url>
   <url type="translate">https://app.transifex.com/gottcode/hexalate/</url>
+  <url type="vcs-browser">https://codeberg.org/gottcode/hexalate</url>
 
   <developer id="org.gottcode">
     <name translatable="no">Graeme Gott</name>
