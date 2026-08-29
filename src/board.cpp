@@ -47,3 +47,5 @@ void Board::resizeEvent(QResizeEvent* event)
 }
 
 //-----------------------------------------------------------------------------
+
+#include "moc_board.cpp"
